@@ -1,4 +1,3830 @@
 {
-  "updated_at": null,
-  "etfs": {}
+  "updated_at": "2026-09-16T21:42:58.319467+08:00",
+  "etfs": {
+    "00400A": {
+      "code": "00400A",
+      "name": "主動國泰動能高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        7,
+        8,
+        9
+      ]
+    },
+    "00401A": {
+      "code": "00401A",
+      "name": "主動摩根台灣鑫收",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "季配",
+      "freq_months": [
+        8,
+        9
+      ]
+    },
+    "00402A": {
+      "code": "00402A",
+      "name": "主動安聯美國科技",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00403A": {
+      "code": "00403A",
+      "name": "主動統一升級50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00404A": {
+      "code": "00404A",
+      "name": "主動聯博動能50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00405A": {
+      "code": "00405A",
+      "name": "主動富邦台灣龍耀",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00406A": {
+      "code": "00406A",
+      "name": "主動中信台灣收益",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "季配",
+      "freq_months": [
+        7,
+        9
+      ]
+    },
+    "00407A": {
+      "code": "00407A",
+      "name": "主動凱基台灣",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00408A": {
+      "code": "00408A",
+      "name": "主動第一金優股息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00409A": {
+      "code": "00409A",
+      "name": "主動復華全球50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00410A": {
+      "code": "00410A",
+      "name": "主動永豐科技趨勢",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "0050": {
+      "code": "0050",
+      "name": "元大台灣50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        1,
+        7
+      ]
+    },
+    "0051": {
+      "code": "0051",
+      "name": "元大中型100",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        11
+      ]
+    },
+    "0052": {
+      "code": "0052",
+      "name": "富邦科技",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "季配",
+      "freq_months": [
+        4
+      ]
+    },
+    "0053": {
+      "code": "0053",
+      "name": "元大電子",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        11
+      ]
+    },
+    "0055": {
+      "code": "0055",
+      "name": "元大MSCI金融",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        11
+      ]
+    },
+    "0056": {
+      "code": "0056",
+      "name": "元大高股息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "0057": {
+      "code": "0057",
+      "name": "富邦摩台",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "0061": {
+      "code": "0061",
+      "name": "元大寶滬深",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00625K": {
+      "code": "00625K",
+      "name": "富邦上証+R",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00631L": {
+      "code": "00631L",
+      "name": "元大台灣50正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00632R": {
+      "code": "00632R",
+      "name": "元大台灣50反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00633L": {
+      "code": "00633L",
+      "name": "富邦上証正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00634R": {
+      "code": "00634R",
+      "name": "富邦上証反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00635U": {
+      "code": "00635U",
+      "name": "期元大S&P黃金",
+      "market": "TWSE",
+      "category": "商品期貨型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00636": {
+      "code": "00636",
+      "name": "國泰中國A50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00636K": {
+      "code": "00636K",
+      "name": "國泰中國A50+U",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00637L": {
+      "code": "00637L",
+      "name": "元大滬深300正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00638R": {
+      "code": "00638R",
+      "name": "元大滬深300反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00639": {
+      "code": "00639",
+      "name": "富邦深100",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00640L": {
+      "code": "00640L",
+      "name": "富邦日本正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00641R": {
+      "code": "00641R",
+      "name": "富邦日本反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00642U": {
+      "code": "00642U",
+      "name": "期元大S&P石油",
+      "market": "TWSE",
+      "category": "商品期貨型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00643": {
+      "code": "00643",
+      "name": "群益深証中小",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00643K": {
+      "code": "00643K",
+      "name": "群益深証中小+R",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00645": {
+      "code": "00645",
+      "name": "富邦日本",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00646": {
+      "code": "00646",
+      "name": "元大S&P500",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00647L": {
+      "code": "00647L",
+      "name": "元大S&P500正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00648R": {
+      "code": "00648R",
+      "name": "元大S&P500反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00650L": {
+      "code": "00650L",
+      "name": "復華香港正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00651R": {
+      "code": "00651R",
+      "name": "復華香港反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00652": {
+      "code": "00652",
+      "name": "富邦印度",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00653L": {
+      "code": "00653L",
+      "name": "富邦印度正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00654R": {
+      "code": "00654R",
+      "name": "富邦印度反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00655L": {
+      "code": "00655L",
+      "name": "國泰中國A50正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00656R": {
+      "code": "00656R",
+      "name": "國泰中國A50反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00657": {
+      "code": "00657",
+      "name": "國泰日經225",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00657K": {
+      "code": "00657K",
+      "name": "國泰日經225+U",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00660": {
+      "code": "00660",
+      "name": "元大歐洲50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00661": {
+      "code": "00661",
+      "name": "元大日經225",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00662": {
+      "code": "00662",
+      "name": "富邦NASDAQ",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00663L": {
+      "code": "00663L",
+      "name": "國泰臺灣加權正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00664R": {
+      "code": "00664R",
+      "name": "國泰臺灣加權反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00665L": {
+      "code": "00665L",
+      "name": "富邦恒生國企正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00666R": {
+      "code": "00666R",
+      "name": "富邦恒生國企反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00668": {
+      "code": "00668",
+      "name": "國泰美國道瓊",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00668K": {
+      "code": "00668K",
+      "name": "國泰美國道瓊+U",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00669R": {
+      "code": "00669R",
+      "name": "國泰美國道瓊反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00670L": {
+      "code": "00670L",
+      "name": "富邦NASDAQ正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00671R": {
+      "code": "00671R",
+      "name": "富邦NASDAQ反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00673R": {
+      "code": "00673R",
+      "name": "期元大S&P原油反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00674R": {
+      "code": "00674R",
+      "name": "期元大S&P黃金反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00675L": {
+      "code": "00675L",
+      "name": "富邦臺灣加權正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00676R": {
+      "code": "00676R",
+      "name": "富邦臺灣加權反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00678": {
+      "code": "00678",
+      "name": "群益那斯達克生技",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00680L": {
+      "code": "00680L",
+      "name": "元大美債20正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00681R": {
+      "code": "00681R",
+      "name": "元大美債20反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00682U": {
+      "code": "00682U",
+      "name": "期元大美元指數",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00683L": {
+      "code": "00683L",
+      "name": "期元大美元指正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00684R": {
+      "code": "00684R",
+      "name": "期元大美元指反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00685L": {
+      "code": "00685L",
+      "name": "群益臺灣加權正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00686R": {
+      "code": "00686R",
+      "name": "群益臺灣加權反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00688L": {
+      "code": "00688L",
+      "name": "國泰20年美債正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00689R": {
+      "code": "00689R",
+      "name": "國泰20年美債反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00690": {
+      "code": "00690",
+      "name": "兆豐藍籌30",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00692": {
+      "code": "00692",
+      "name": "富邦公司治理",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        7,
+        11
+      ]
+    },
+    "00693U": {
+      "code": "00693U",
+      "name": "期街口S&P黃豆",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00700": {
+      "code": "00700",
+      "name": "富邦恒生國企",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00701": {
+      "code": "00701",
+      "name": "國泰股利精選30",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        1,
+        8
+      ]
+    },
+    "00702": {
+      "code": "00702",
+      "name": "國泰標普低波高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        1,
+        7
+      ]
+    },
+    "00703": {
+      "code": "00703",
+      "name": "台新MSCI中國",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00706L": {
+      "code": "00706L",
+      "name": "期元大S&P日圓正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00707R": {
+      "code": "00707R",
+      "name": "期元大S&P日圓反1",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00708L": {
+      "code": "00708L",
+      "name": "期元大S&P黃金正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00709": {
+      "code": "00709",
+      "name": "富邦歐洲",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00710B": {
+      "code": "00710B",
+      "name": "復華彭博非投等債",
+      "market": "TWSE",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00711B": {
+      "code": "00711B",
+      "name": "復華彭博新興債",
+      "market": "TWSE",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00712": {
+      "code": "00712",
+      "name": "復華富時不動產",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00713": {
+      "code": "00713",
+      "name": "元大台灣高息低波",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00714": {
+      "code": "00714",
+      "name": "群益道瓊美國地產",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00715L": {
+      "code": "00715L",
+      "name": "期街口S&P布蘭特油正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00717": {
+      "code": "00717",
+      "name": "富邦美國特別股",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00728": {
+      "code": "00728",
+      "name": "第一金工業30",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00730": {
+      "code": "00730",
+      "name": "富邦臺灣優質高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00731": {
+      "code": "00731",
+      "name": "復華富時高息低波",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        5,
+        8,
+        11
+      ]
+    },
+    "00733": {
+      "code": "00733",
+      "name": "富邦臺灣中小",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        4,
+        10
+      ]
+    },
+    "00735": {
+      "code": "00735",
+      "name": "國泰臺韓科技",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        1,
+        7
+      ]
+    },
+    "00736": {
+      "code": "00736",
+      "name": "國泰新興市場",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        1,
+        7
+      ]
+    },
+    "00737": {
+      "code": "00737",
+      "name": "國泰AI機器人",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00738U": {
+      "code": "00738U",
+      "name": "期元大道瓊白銀",
+      "market": "TWSE",
+      "category": "商品期貨型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00739": {
+      "code": "00739",
+      "name": "元大MSCI A股",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        10
+      ]
+    },
+    "00752": {
+      "code": "00752",
+      "name": "中信中國50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00753L": {
+      "code": "00753L",
+      "name": "中信中國50正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00757": {
+      "code": "00757",
+      "name": "統一FANG+",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00762": {
+      "code": "00762",
+      "name": "元大全球AI",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00763U": {
+      "code": "00763U",
+      "name": "期街口道瓊銅",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00770": {
+      "code": "00770",
+      "name": "國泰北美科技",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        1
+      ]
+    },
+    "00771": {
+      "code": "00771",
+      "name": "元大US高息特別股",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00775B": {
+      "code": "00775B",
+      "name": "台新投等債15+",
+      "market": "TWSE",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00783": {
+      "code": "00783",
+      "name": "富邦中証500",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00830": {
+      "code": "00830",
+      "name": "國泰費城半導體",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        1
+      ]
+    },
+    "00850": {
+      "code": "00850",
+      "name": "元大臺灣ESG永續",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00851": {
+      "code": "00851",
+      "name": "台新全球AI",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        10
+      ]
+    },
+    "00852L": {
+      "code": "00852L",
+      "name": "國泰美國道瓊正2",
+      "market": "TWSE",
+      "category": "槓桿反向",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00861": {
+      "code": "00861",
+      "name": "元大全球未來通訊",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00865B": {
+      "code": "00865B",
+      "name": "國泰US短期公債",
+      "market": "TWSE",
+      "category": "債券型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00875": {
+      "code": "00875",
+      "name": "國泰網路資安",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00876": {
+      "code": "00876",
+      "name": "元大全球5G",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00878": {
+      "code": "00878",
+      "name": "國泰永續高股息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00881": {
+      "code": "00881",
+      "name": "國泰台灣科技龍頭",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        1,
+        8
+      ]
+    },
+    "00882": {
+      "code": "00882",
+      "name": "中信中國高股息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        1,
+        7
+      ]
+    },
+    "00885": {
+      "code": "00885",
+      "name": "富邦越南",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00891": {
+      "code": "00891",
+      "name": "中信關鍵半導體",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00892": {
+      "code": "00892",
+      "name": "富邦台灣半導體",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        7,
+        11
+      ]
+    },
+    "00893": {
+      "code": "00893",
+      "name": "國泰智能電動車",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00894": {
+      "code": "00894",
+      "name": "中信小資高價30",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00895": {
+      "code": "00895",
+      "name": "富邦未來車",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00896": {
+      "code": "00896",
+      "name": "中信綠能及電動車",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00897": {
+      "code": "00897",
+      "name": "富邦基因免疫生技",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00898": {
+      "code": "00898",
+      "name": "國泰基因免疫革命",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00899": {
+      "code": "00899",
+      "name": "FT潔淨能源",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00900": {
+      "code": "00900",
+      "name": "富邦特選高股息30",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00901": {
+      "code": "00901",
+      "name": "永豐智能車供應鏈",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        11
+      ]
+    },
+    "00902": {
+      "code": "00902",
+      "name": "中信電池及儲能",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00903": {
+      "code": "00903",
+      "name": "富邦元宇宙",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00904": {
+      "code": "00904",
+      "name": "台新臺灣半導體30",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00905": {
+      "code": "00905",
+      "name": "FT臺灣SMART",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00907": {
+      "code": "00907",
+      "name": "永豐優息存股",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ]
+    },
+    "00908": {
+      "code": "00908",
+      "name": "富邦入息REITs+",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00909": {
+      "code": "00909",
+      "name": "國泰數位支付服務",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        4
+      ]
+    },
+    "00910": {
+      "code": "00910",
+      "name": "第一金太空衛星",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00911": {
+      "code": "00911",
+      "name": "兆豐洲際半導體",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        1,
+        7
+      ]
+    },
+    "00912": {
+      "code": "00912",
+      "name": "中信臺灣智慧50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00913": {
+      "code": "00913",
+      "name": "兆豐台灣晶圓製造",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        2,
+        8
+      ]
+    },
+    "00915": {
+      "code": "00915",
+      "name": "凱基優選高股息30",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        8,
+        9,
+        12
+      ]
+    },
+    "00916": {
+      "code": "00916",
+      "name": "國泰全球品牌50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "季配",
+      "freq_months": [
+        6
+      ]
+    },
+    "00917": {
+      "code": "00917",
+      "name": "中信特選金融",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "季配",
+      "freq_months": [
+        1
+      ]
+    },
+    "00918": {
+      "code": "00918",
+      "name": "大華優利高填息30",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00919": {
+      "code": "00919",
+      "name": "群益台灣精選高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00920": {
+      "code": "00920",
+      "name": "富邦ESG綠色電力",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        1
+      ]
+    },
+    "00921": {
+      "code": "00921",
+      "name": "兆豐龍頭等權重",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00922": {
+      "code": "00922",
+      "name": "國泰台灣領袖50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        3,
+        10
+      ]
+    },
+    "00923": {
+      "code": "00923",
+      "name": "群益台ESG低碳50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        2,
+        8
+      ]
+    },
+    "00924": {
+      "code": "00924",
+      "name": "復華S&P500成長",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00926": {
+      "code": "00926",
+      "name": "凱基全球菁英55",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        12
+      ]
+    },
+    "00927": {
+      "code": "00927",
+      "name": "群益半導體收益",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00929": {
+      "code": "00929",
+      "name": "復華台灣科技優息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00930": {
+      "code": "00930",
+      "name": "永豐ESG低碳高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ]
+    },
+    "00932": {
+      "code": "00932",
+      "name": "兆豐永續高息等權",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00934": {
+      "code": "00934",
+      "name": "中信成長高股息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00935": {
+      "code": "00935",
+      "name": "野村臺灣新科技50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        3,
+        9
+      ]
+    },
+    "00936": {
+      "code": "00936",
+      "name": "台新永續高息中小",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00938": {
+      "code": "00938",
+      "name": "凱基優選30",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00939": {
+      "code": "00939",
+      "name": "統一台灣高息動能",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00940": {
+      "code": "00940",
+      "name": "元大台灣價值高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00941": {
+      "code": "00941",
+      "name": "中信上游半導體",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00943": {
+      "code": "00943",
+      "name": "兆豐電子高息等權",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00944": {
+      "code": "00944",
+      "name": "野村趨勢動能高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00945B": {
+      "code": "00945B",
+      "name": "凱基美國非投等債",
+      "market": "TWSE",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00946": {
+      "code": "00946",
+      "name": "群益科技高息成長",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00947": {
+      "code": "00947",
+      "name": "台新臺灣IC設計",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00949": {
+      "code": "00949",
+      "name": "復華日本龍頭",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00951": {
+      "code": "00951",
+      "name": "台新日本半導體",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        11
+      ]
+    },
+    "00952": {
+      "code": "00952",
+      "name": "凱基台灣AI50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00953B": {
+      "code": "00953B",
+      "name": "群益優選非投等債",
+      "market": "TWSE",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00954": {
+      "code": "00954",
+      "name": "中信日本半導體",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00956": {
+      "code": "00956",
+      "name": "中信日經高股息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00960": {
+      "code": "00960",
+      "name": "野村全球航運龍頭",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00961": {
+      "code": "00961",
+      "name": "FT臺灣永續高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00962": {
+      "code": "00962",
+      "name": "台新AI優息動能",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00963": {
+      "code": "00963",
+      "name": "中信全球高股息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00964": {
+      "code": "00964",
+      "name": "中信亞太高股息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00965": {
+      "code": "00965",
+      "name": "元大航太防衛科技",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00971": {
+      "code": "00971",
+      "name": "野村美國研發龍頭",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        12
+      ]
+    },
+    "00972": {
+      "code": "00972",
+      "name": "野村日本動能高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00980A": {
+      "code": "00980A",
+      "name": "主動野村臺灣優選",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00981A": {
+      "code": "00981A",
+      "name": "主動統一台股增長",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "季配",
+      "freq_months": [
+        3,
+        6
+      ]
+    },
+    "00981T": {
+      "code": "00981T",
+      "name": "平衡凱基雙核收息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "00982A": {
+      "code": "00982A",
+      "name": "主動群益台灣強棒",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00982D": {
+      "code": "00982D",
+      "name": "主動富邦動態入息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "00982T": {
+      "code": "00982T",
+      "name": "平衡兆豐台美動能",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00983A": {
+      "code": "00983A",
+      "name": "主動中信ARK創新",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00983D": {
+      "code": "00983D",
+      "name": "主動富邦複合收益",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "00984A": {
+      "code": "00984A",
+      "name": "主動安聯台灣高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00984D": {
+      "code": "00984D",
+      "name": "主動聯博全球非投",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        5,
+        6,
+        7,
+        9
+      ]
+    },
+    "00985A": {
+      "code": "00985A",
+      "name": "主動野村台灣50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00985B": {
+      "code": "00985B",
+      "name": "群益ESG投等債0-5",
+      "market": "TWSE",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12
+      ]
+    },
+    "00986A": {
+      "code": "00986A",
+      "name": "主動台新龍頭成長",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00987A": {
+      "code": "00987A",
+      "name": "主動台新優勢成長",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00988A": {
+      "code": "00988A",
+      "name": "主動統一全球創新",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00989A": {
+      "code": "00989A",
+      "name": "主動摩根美國科技",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00990A": {
+      "code": "00990A",
+      "name": "主動元大AI新經濟",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00991A": {
+      "code": "00991A",
+      "name": "主動復華未來50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        7
+      ]
+    },
+    "00991B": {
+      "code": "00991B",
+      "name": "貝萊德A級公司債",
+      "market": "TWSE",
+      "category": "債券型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00992A": {
+      "code": "00992A",
+      "name": "主動群益科技創新",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        7
+      ]
+    },
+    "00993A": {
+      "code": "00993A",
+      "name": "主動安聯台灣",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00994A": {
+      "code": "00994A",
+      "name": "主動第一金台股優",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        6
+      ]
+    },
+    "00995A": {
+      "code": "00995A",
+      "name": "主動中信台灣卓越",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00996A": {
+      "code": "00996A",
+      "name": "主動兆豐台灣豐收",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00997A": {
+      "code": "00997A",
+      "name": "主動群益美國增長",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        7
+      ]
+    },
+    "00999A": {
+      "code": "00999A",
+      "name": "主動野村臺灣高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00411A": {
+      "code": "00411A",
+      "name": "主動統一前沿科技",
+      "market": "TPEx",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00679B": {
+      "code": "00679B",
+      "name": "元大美債20年",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00687B": {
+      "code": "00687B",
+      "name": "國泰20年美債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00687C": {
+      "code": "00687C",
+      "name": "國泰20年美債+櫃U",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00694B": {
+      "code": "00694B",
+      "name": "富邦美債1-3年",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00695B": {
+      "code": "00695B",
+      "name": "富邦美債7-10年",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00696B": {
+      "code": "00696B",
+      "name": "富邦美債20年",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00697B": {
+      "code": "00697B",
+      "name": "元大美債7-10",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00719B": {
+      "code": "00719B",
+      "name": "元大美債1-3",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00720B": {
+      "code": "00720B",
+      "name": "元大投資級公司債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00722B": {
+      "code": "00722B",
+      "name": "群益投資級電信債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00723B": {
+      "code": "00723B",
+      "name": "群益投資級科技債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00724B": {
+      "code": "00724B",
+      "name": "群益投資級金融債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00725B": {
+      "code": "00725B",
+      "name": "國泰投資級公司債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00726B": {
+      "code": "00726B",
+      "name": "國泰新興投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00727B": {
+      "code": "00727B",
+      "name": "國泰優選非投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00734B": {
+      "code": "00734B",
+      "name": "台新JPM新興債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00740B": {
+      "code": "00740B",
+      "name": "富邦全球投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00741B": {
+      "code": "00741B",
+      "name": "富邦全球非投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00746B": {
+      "code": "00746B",
+      "name": "富邦A級公司債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00749B": {
+      "code": "00749B",
+      "name": "凱基新興債10+",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00750B": {
+      "code": "00750B",
+      "name": "凱基科技債10+",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00751B": {
+      "code": "00751B",
+      "name": "元大AAA至A公司債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00754B": {
+      "code": "00754B",
+      "name": "群益AAA-AA公司債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00755B": {
+      "code": "00755B",
+      "name": "群益投資級公用債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00756B": {
+      "code": "00756B",
+      "name": "群益投等新興公債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00758B": {
+      "code": "00758B",
+      "name": "復華能源債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        5,
+        8,
+        11
+      ]
+    },
+    "00759B": {
+      "code": "00759B",
+      "name": "復華製藥債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        5,
+        8,
+        11
+      ]
+    },
+    "00760B": {
+      "code": "00760B",
+      "name": "復華新興企業債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        5,
+        8,
+        11
+      ]
+    },
+    "00761B": {
+      "code": "00761B",
+      "name": "國泰A級公司債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00764B": {
+      "code": "00764B",
+      "name": "群益25年美債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00768B": {
+      "code": "00768B",
+      "name": "復華20年美債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        5,
+        8,
+        11
+      ]
+    },
+    "00772B": {
+      "code": "00772B",
+      "name": "中信高評級公司債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00773B": {
+      "code": "00773B",
+      "name": "中信優先金融債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00777B": {
+      "code": "00777B",
+      "name": "凱基AAA至A公司債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00778B": {
+      "code": "00778B",
+      "name": "凱基金融債20+",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00779B": {
+      "code": "00779B",
+      "name": "凱基美債25+",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00780B": {
+      "code": "00780B",
+      "name": "國泰A級金融債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00781B": {
+      "code": "00781B",
+      "name": "國泰A級科技債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00782B": {
+      "code": "00782B",
+      "name": "國泰A級公用債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00785B": {
+      "code": "00785B",
+      "name": "富邦金融投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00786B": {
+      "code": "00786B",
+      "name": "元大10年IG銀行債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00787B": {
+      "code": "00787B",
+      "name": "元大10年IG醫療債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00788B": {
+      "code": "00788B",
+      "name": "元大10年IG電能債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00789B": {
+      "code": "00789B",
+      "name": "復華公司債A3",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00791B": {
+      "code": "00791B",
+      "name": "復華信用債1-5",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00792B": {
+      "code": "00792B",
+      "name": "群益A級公司債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00793B": {
+      "code": "00793B",
+      "name": "群益AAA-A醫療債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00795B": {
+      "code": "00795B",
+      "name": "中信美國公債20年",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00799B": {
+      "code": "00799B",
+      "name": "國泰A級醫療債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00834B": {
+      "code": "00834B",
+      "name": "第一金金融債10+",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00836B": {
+      "code": "00836B",
+      "name": "永豐10年A公司債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00838B": {
+      "code": "00838B",
+      "name": "永豐7-10年中國債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00840B": {
+      "code": "00840B",
+      "name": "凱基IG精選15+",
+      "market": "TPEx",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00841B": {
+      "code": "00841B",
+      "name": "凱基AAA-AA公司債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00842B": {
+      "code": "00842B",
+      "name": "台新美元銀行債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00844B": {
+      "code": "00844B",
+      "name": "台新15年IG金融債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00845B": {
+      "code": "00845B",
+      "name": "富邦新興投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00846B": {
+      "code": "00846B",
+      "name": "富邦歐洲銀行債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00847B": {
+      "code": "00847B",
+      "name": "中信美國市政債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00848B": {
+      "code": "00848B",
+      "name": "中信新興亞洲債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00849B": {
+      "code": "00849B",
+      "name": "中信EM主權債0-5",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00853B": {
+      "code": "00853B",
+      "name": "統一美債10年Aa-A",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00856B": {
+      "code": "00856B",
+      "name": "永豐1-3年美公債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00857B": {
+      "code": "00857B",
+      "name": "永豐20年美公債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00858": {
+      "code": "00858",
+      "name": "永豐美國500大",
+      "market": "TPEx",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        1,
+        7
+      ]
+    },
+    "00859B": {
+      "code": "00859B",
+      "name": "群益0-1年美債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00860B": {
+      "code": "00860B",
+      "name": "群益1-5Y投資級債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00862B": {
+      "code": "00862B",
+      "name": "中信投資級公司債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00863B": {
+      "code": "00863B",
+      "name": "中信全球電信債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    "00864B": {
+      "code": "00864B",
+      "name": "中信美國公債0-1",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00867B": {
+      "code": "00867B",
+      "name": "台新A-BBB電信債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    "00870B": {
+      "code": "00870B",
+      "name": "元大15年EM主權債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00877": {
+      "code": "00877",
+      "name": "復華中國5G",
+      "market": "TPEx",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00884B": {
+      "code": "00884B",
+      "name": "中信低碳新興債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00886": {
+      "code": "00886",
+      "name": "永豐美國科技",
+      "market": "TPEx",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00887": {
+      "code": "00887",
+      "name": "永豐中國科技50大",
+      "market": "TPEx",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00888": {
+      "code": "00888",
+      "name": "永豐台灣ESG",
+      "market": "TPEx",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00890B": {
+      "code": "00890B",
+      "name": "凱基ESG BBB 債 15+",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00928": {
+      "code": "00928",
+      "name": "中信上櫃ESG 30",
+      "market": "TPEx",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        1,
+        7
+      ]
+    },
+    "00931B": {
+      "code": "00931B",
+      "name": "統一美債20年",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    "00933B": {
+      "code": "00933B",
+      "name": "國泰10Y+金融債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00937B": {
+      "code": "00937B",
+      "name": "群益ESG投等債20+",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00942B": {
+      "code": "00942B",
+      "name": "台新美A公司債20+",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00948B": {
+      "code": "00948B",
+      "name": "中信優息投資級債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00950B": {
+      "code": "00950B",
+      "name": "凱基A級公司債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00955": {
+      "code": "00955",
+      "name": "中信日本商社",
+      "market": "TPEx",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00957B": {
+      "code": "00957B",
+      "name": "兆豐US優選投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00958B": {
+      "code": "00958B",
+      "name": "永豐ESG銀行債15+",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00959B": {
+      "code": "00959B",
+      "name": "大華投等美債15Y+",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00966B": {
+      "code": "00966B",
+      "name": "統一ESG投等債15+",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00967B": {
+      "code": "00967B",
+      "name": "元大優息美債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00968B": {
+      "code": "00968B",
+      "name": "元大優息投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00969B": {
+      "code": "00969B",
+      "name": "元大零息超長美債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00970B": {
+      "code": "00970B",
+      "name": "台新BBB投等債20+",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00980B": {
+      "code": "00980B",
+      "name": "台新特選IG債10+",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00980D": {
+      "code": "00980D",
+      "name": "主動聯博投等入息",
+      "market": "TPEx",
+      "category": "一般股票型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    },
+    "00980T": {
+      "code": "00980T",
+      "name": "平衡凱基美國TOP",
+      "market": "TPEx",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00981B": {
+      "code": "00981B",
+      "name": "第一金優選非投債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00981D": {
+      "code": "00981D",
+      "name": "主動中信非投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12
+      ]
+    },
+    "00982B": {
+      "code": "00982B",
+      "name": "FT投資級債20+",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "00983B": {
+      "code": "00983B",
+      "name": "大華優利美公債20",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ]
+    },
+    "00984B": {
+      "code": "00984B",
+      "name": "大華優利美A債15",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ]
+    },
+    "00985D": {
+      "code": "00985D",
+      "name": "主動貝萊德優投等",
+      "market": "TPEx",
+      "category": "一般股票型",
+      "frequency": "雙月配",
+      "freq_months": [
+        6,
+        7,
+        8
+      ]
+    },
+    "00986B": {
+      "code": "00986B",
+      "name": "FT金融債10+",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        9
+      ]
+    },
+    "00986D": {
+      "code": "00986D",
+      "name": "主動復華金融債息",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "雙月配",
+      "freq_months": [
+        6,
+        7,
+        8
+      ]
+    },
+    "00987B": {
+      "code": "00987B",
+      "name": "野村10+澳洲公債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "半年配",
+      "freq_months": [
+        8
+      ]
+    },
+    "00987D": {
+      "code": "00987D",
+      "name": "主動統一美債量化",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00988B": {
+      "code": "00988B",
+      "name": "玉山嚴選非投債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "月配",
+      "freq_months": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "00989B": {
+      "code": "00989B",
+      "name": "台新美國非投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "雙月配",
+      "freq_months": [
+        7,
+        8,
+        9
+      ]
+    },
+    "00990B": {
+      "code": "00990B",
+      "name": "國泰收益非投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00998A": {
+      "code": "00998A",
+      "name": "主動復華金融股息",
+      "market": "TPEx",
+      "category": "一般股票型",
+      "frequency": "半年配",
+      "freq_months": [
+        6
+      ]
+    }
+  }
 }
