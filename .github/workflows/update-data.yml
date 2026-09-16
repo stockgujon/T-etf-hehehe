@@ -1,9 +1,8 @@
 name: 每日更新ETF除息資料
 
 on:
-schedule:
-  # 台灣時間每天凌晨 02:00 (UTC前一天 18:00)
-  - cron: "0 18 * * *"
+  schedule:
+    - cron: "0 18 * * *"
   workflow_dispatch: {}
 
 permissions:
