@@ -211,7 +211,6 @@ def infer_frequency(events: list) -> dict:
         recent = events[-4:]
 
     months = sorted({datetime.fromisoformat(e["ex_date"]).date().month for e in recent})
-    # 用最近12個月的事件數估頻率，再退回18個月的資料估算
     count = len(recent)
     span_years = max(len(recent) / 12.0, 0.5)
     per_year = count / span_years if span_years else count
@@ -237,22 +236,14 @@ def strip_tags(html_fragment: str) -> str:
 def parse_announcement_rows(html: str) -> list:
     """解析公告列表頁一頁的內容，回傳 [{fund, date(YYYYMMDD), seq, type, href}, ...]。
 
-    不假設頁面一定是傳統 <table><tr><td> 結構(有些新版頁面用 div 排版)，
-    做法是：找到每一個公告連結，往前抓一段文字當作「這一列」的可見內容，
-    只要那段文字裡有出現「收益分配」就算數。這樣不管底層標籤怎麼寫都不影響判斷，
-    比死板地找 <tr>...</tr> 更不容易因為網頁改版而整批抓空。
+    直接看每個公告連結網址自己帶的 type 參數是否為 distribution。
+    因為我們一開始查詢時就是用 announcementList?type=distribution，
+    這個篩選是伺服器端做的，連結上的type參數就是最可靠的依據，
+    不需要再去猜測周圍可見文字的排版方式(不同頁面版型可能不一致)。
     """
     matches = list(HREF_RE.finditer(html))
     rows = []
-    prev_end = 0
     for m in matches:
-        window_start = max(prev_end, m.start() - 600)
-        context_text = unicodedata.normalize("NFKC", strip_tags(html[window_start:m.start()]))
-        prev_end = m.end()
-
-        if "收益分配" not in context_text:
-            continue
-
         href = m.group(1)
         qs = href.split("?", 1)[1] if "?" in href else ""
         params = dict(
@@ -262,25 +253,29 @@ def parse_announcement_rows(html: str) -> list:
         )
         fund = params.get("fund")
         date = params.get("date")  # 格式 YYYYMMDD，西元
+        etype = params.get("type", "")
         if not (fund and date and re.match(r"^\d{8}$", date)):
+            continue
+        if etype != "distribution":
             continue
         rows.append({
             "fund": fund,
             "date": date,
             "seq": params.get("seq", "1"),
-            "type": params.get("type", ""),
+            "type": etype,
             "href": href,
         })
 
     if not rows:
-        # 診斷用：如果完全解析不到任何一列，印出關鍵線索，
-        # 方便下次直接從Actions記錄判斷是「網頁根本沒回傳資料」
-        # 還是「有資料但關鍵字/連結格式跟預期不同」
-        has_link = bool(HREF_RE.search(html))
-        has_keyword = "收益分配" in html
+        # 診斷用：如果完全解析不到任何一列，印出關鍵線索
+        has_link = bool(matches)
+        link_types = sorted({
+            dict((kv.split("=", 1)[0], kv.split("=", 1)[1]) for kv in m.group(1).split("?", 1)[1].split("&") if "=" in kv).get("type", "")
+            for m in matches
+        }) if matches else []
         print(
             f"[diag] 本頁解析為0列 | html長度={len(html)} | "
-            f"含公告連結={has_link} | 含'收益分配'文字={has_keyword}",
+            f"連結數={len(matches)} | 連結上出現過的type值={link_types}",
             file=sys.stderr,
         )
     return rows
@@ -412,7 +407,6 @@ def main():
             "frequency": freq_info["frequency"],
             "freq_months": freq_info["freq_months"],
         }
-        # 對來源站溫和一點，避免被判定為濫用
         time.sleep(0.3)
 
     print("[info] 開始掃描近一個月的收益分配公告(已公告但尚未除息)")
@@ -427,7 +421,7 @@ def main():
         code = a["code"]
         key = (code, a["ex_date"])
         if key in actual_keys or key in {(e["code"], e["ex_date"]) for e in all_events}:
-            continue  # 已經有實際數字了，不需要公告預估版本
+            continue
         etf = etf_by_code.get(code)
         if not etf:
             continue
