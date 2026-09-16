@@ -177,6 +177,16 @@ html, body {
 .etf-badge.freq-季配 { border-left-color: var(--freq-quarterly); }
 .etf-badge.freq-半年配 { border-left-color: var(--freq-semiannual); }
 .etf-badge.freq-年配 { border-left-color: var(--freq-annual); }
+.etf-badge.is-announced {
+  border-left-style: dashed;
+  opacity: 0.82;
+}
+.status-tag {
+  font-size: 10px;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+.status-tag.is-announced { color: var(--accent); }
 
 .etf-more {
   font-size: 10px;

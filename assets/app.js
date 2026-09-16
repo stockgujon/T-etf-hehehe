@@ -131,9 +131,10 @@ function buildMonthCard(year, month) {
       const shown = dayEvents.slice(0, 3);
       shown.forEach((ev) => {
         const b = document.createElement("span");
-        b.className = `etf-badge freq-${freqOf(ev.code)}`;
+        const announced = ev.status === "announced";
+        b.className = `etf-badge freq-${freqOf(ev.code)}${announced ? " is-announced" : ""}`;
         b.textContent = ev.code;
-        b.title = `${ev.code} ${ev.name}`;
+        b.title = `${ev.code} ${ev.name}${announced ? "（公告預估，尚未除息）" : ""}`;
         b.addEventListener("click", () => openDayPopover(cellDate, dayEvents));
         row.appendChild(b);
       });
@@ -182,10 +183,11 @@ function openDayPopover(date, events) {
     .forEach((ev) => {
       const item = document.createElement("div");
       item.className = "item";
+      const announced = ev.status === "announced";
       item.innerHTML = `
-        <div class="code-name">${ev.code} ${ev.name}</div>
+        <div class="code-name">${ev.code} ${ev.name} <span class="status-tag${announced ? " is-announced" : ""}">${announced ? "・公告預估" : "・已實際除息"}</span></div>
         <div class="row"><span>配息頻率</span><span class="val">${freqOf(ev.code)}</span></div>
-        <div class="row"><span>配息金額</span><span class="val num">${ev.amount} 元/股</span></div>
+        <div class="row"><span>配息金額</span><span class="val num">${ev.amount} 元/股${announced ? "（預估）" : ""}</span></div>
         <div class="row"><span>市場</span><span class="val">${ev.market === "TWSE" ? "上市" : "上櫃"}</span></div>
       `;
       pop.appendChild(item);

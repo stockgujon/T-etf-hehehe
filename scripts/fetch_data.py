@@ -9,12 +9,17 @@
      strMode=2 -> 上市 (TWSE) 全部有價證券
      strMode=4 -> 上櫃 (TPEx) 全部有價證券
      從中篩選「產業別」為 ETF 的列。
-  2. 除息事件：Yahoo Finance chart API 的 dividends 事件
+  2. 已發生的除息事件(status=actual)：Yahoo Finance chart API 的 dividends 事件
      上市 ETF 用 {代號}.TW，上櫃 ETF 用 {代號}.TWO
+  3. 已公告但尚未除息的事件(status=announced)：TWSE「e添富」平台的收益分配公告
+     (https://www.twse.com.tw/zh/ETFortune/announcementList?type=distribution)，
+     這是全市場(上市+上櫃ETF)共用的一份公告列表，只掃最近約35天，
+     每篇公告內文用關鍵字解析出「除息交易日」與「預計/預估配發金額」。
+     同一檔同一天如果Yahoo已經有實際數字，以實際數字為準，公告預估的那筆會被捨棄。
 
-這兩個都不是官方「文件化」的公開API，是社群長期驗證可用的公開端點；
-若哪天格式跑掉，屬於預期中會需要調整的維護點，程式已盡量寫得寬容
-(找不到欄位就跳過該筆，不會讓整個流程死掉)。
+這些都不是官方「文件化」的公開API，是社群長期驗證可用/我方直接觀察頁面格式後
+歸納出的公開端點；若哪天格式跑掉，屬於預期中會需要調整的維護點，程式已盡量寫得
+寬容(找不到欄位就跳過該筆，不會讓整個流程死掉)。
 
 重試策略：每一次HTTP請求本身有內建重試(數次、間隔遞增)；
 若整個腳本仍然失敗(例如來源網站當下完全打不通)，會以非0狀態碼結束，
@@ -44,6 +49,17 @@ BOND_HINTS = ["债", "債", "公司債", "美債", "公債", "投等債", "高�
 COMMODITY_HINTS = ["原油", "黃金", "黄金", "白銀", "商品", "期货", "期貨", "石油"]
 
 USER_AGENT = "Mozilla/5.0 (compatible; tw-etf-dividend-tracker/1.0)"
+
+ANNOUNCEMENT_LIST_URL = "https://www.twse.com.tw/zh/ETFortune/announcementList?type=distribution&max=10&offset={offset}"
+ANNOUNCEMENT_LOOKBACK_DAYS = 35  # 抓「近一個月」的公告，多留一點緩衝
+ANNOUNCEMENT_MAX_PAGES = 40  # 安全上限，避免萬一日期判斷失準時無限翻頁
+
+ROW_RE = re.compile(r"<tr[^>]*>(.*?)</tr>", re.S)
+HREF_RE = re.compile(r'href="(/zh/ETFortune/announcement\?[^"]+)"')
+TAG_RE = re.compile(r"<[^>]+>")
+EX_DATE_RE = re.compile(r"除息交易日[:：]?\s*([0-9]{2,3})[/\-]([0-9]{1,2})[/\-]([0-9]{1,2})")
+AMOUNT_RE = re.compile(r"新[臺台]幣\s*([0-9]+(?:\.[0-9]+)?)\s*元")
+AMOUNT_KEYWORD_RE = re.compile(r"預計|預估|預定|實際")
 
 
 def http_get(url, max_retries=4, base_delay=20, encoding=None):
@@ -214,6 +230,132 @@ def infer_frequency(events: list) -> dict:
     return {"frequency": freq, "freq_months": months}
 
 
+def strip_tags(html_fragment: str) -> str:
+    return TAG_RE.sub(" ", html_fragment)
+
+
+def parse_announcement_rows(html: str) -> list:
+    """解析公告列表頁一頁的內容，回傳 [{fund, date(YYYYMMDD), seq, type, href}, ...]。
+    只保留「可見文字含收益分配」的列（不是只看網址的type參數），
+    這是沿用 etf-radar 驗證過的做法：分類欄位本身不一定可靠，看內文字才準。
+    """
+    rows = []
+    for row_html in ROW_RE.findall(html):
+        href_m = HREF_RE.search(row_html)
+        if not href_m:
+            continue
+        text = unicodedata.normalize("NFKC", strip_tags(row_html))
+        # 只看「消息分類」到「發言日期」之間的那一段文字，避免公告標題裡
+        # 剛好出現「收益分配」字樣卻被誤判成該分類(標題內容不受我方控制)
+        cat_m = re.search(r"消息分類\s*(.*?)\s*發言日期", text)
+        category_text = cat_m.group(1) if cat_m else text
+        if "收益分配" not in category_text:
+            continue
+        href = href_m.group(1)
+        qs = href.split("?", 1)[1] if "?" in href else ""
+        params = dict(
+            (kv.split("=", 1)[0], kv.split("=", 1)[1])
+            for kv in qs.split("&")
+            if "=" in kv
+        )
+        fund = params.get("fund")
+        date = params.get("date")  # 格式 YYYYMMDD，西元
+        if not (fund and date and re.match(r"^\d{8}$", date)):
+            continue
+        rows.append({
+            "fund": fund,
+            "date": date,
+            "seq": params.get("seq", "1"),
+            "type": params.get("type", ""),
+            "href": href,
+        })
+    return rows
+
+
+def extract_ex_date_and_amount(detail_html: str):
+    """從公告內文解析「除息交易日」與「預計/預估/實際配發金額」。
+    找不到就回傳 (None, None)，呼叫端要自行略過該筆。
+    """
+    text = strip_tags(detail_html)
+    text = re.sub(r"\s+", "", text)  # 各投信排版不一，斷行/空白都先拿掉再比對
+
+    ex_date = None
+    m = EX_DATE_RE.search(text)
+    if m:
+        roc_year, month, day = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        try:
+            ex_date = datetime(roc_year + 1911, month, day).date().isoformat()
+        except ValueError:
+            ex_date = None
+
+    amount = None
+    for am in AMOUNT_RE.finditer(text):
+        context = text[max(0, am.start() - 40): am.start()]
+        if "配發金額" in context and AMOUNT_KEYWORD_RE.search(context):
+            try:
+                amount = round(float(am.group(1)), 4)
+            except ValueError:
+                amount = None
+            break
+
+    return ex_date, amount
+
+
+def fetch_announced_events(etf_codes: set) -> list:
+    """掃近一個月的「收益分配」公告，抓出還沒發生、但已經公告的除息日+預估金額。
+    這是全市場共用的一份列表，頁數只跟時間範圍有關，跟追蹤幾檔ETF無關。
+    單一頁或單一篇公告失敗都只跳過該筆，不影響其他資料。
+    """
+    cutoff = (datetime.now(TAIPEI_TZ) - timedelta(days=ANNOUNCEMENT_LOOKBACK_DAYS)).strftime("%Y%m%d")
+    announced = []
+    seen_keys = set()
+
+    for page in range(ANNOUNCEMENT_MAX_PAGES):
+        offset = page * 10
+        url = ANNOUNCEMENT_LIST_URL.format(offset=offset)
+        try:
+            html = http_get(url, max_retries=3, base_delay=15)
+        except Exception as e:  # noqa: BLE001
+            print(f"[warn] 公告列表第{page + 1}頁抓取失敗，停止往後翻頁: {e}", file=sys.stderr)
+            break
+
+        rows = parse_announcement_rows(html)
+        if not rows:
+            print(f"[info] 公告列表第{page + 1}頁沒有資料，結束翻頁")
+            break
+
+        reached_cutoff = False
+        for row in rows:
+            if row["date"] < cutoff:
+                reached_cutoff = True
+                continue
+            if row["fund"] not in etf_codes:
+                continue
+            key = (row["fund"], row["date"], row["seq"])
+            if key in seen_keys:
+                continue
+            seen_keys.add(key)
+
+            detail_url = "https://www.twse.com.tw" + row["href"]
+            try:
+                detail_html = http_get(detail_url, max_retries=2, base_delay=8)
+            except Exception as e:  # noqa: BLE001
+                print(f"[warn] 公告內文抓取失敗，略過 {row['fund']} {row['date']}: {e}", file=sys.stderr)
+                continue
+
+            ex_date, amount = extract_ex_date_and_amount(detail_html)
+            if ex_date and amount is not None:
+                announced.append({"code": row["fund"], "ex_date": ex_date, "amount": amount})
+            time.sleep(0.3)
+
+        print(f"[info] 公告列表第{page + 1}頁解析出 {len(rows)} 則收益分配公告")
+        if reached_cutoff:
+            break
+        time.sleep(0.3)
+
+    return announced
+
+
 def main():
     all_etfs = []
     for market in ("TWSE", "TPEx"):
@@ -228,9 +370,12 @@ def main():
 
     all_events = []
     meta = {}
+    etf_by_code = {}
+    actual_keys = set()  # (code, ex_date) 已經有Yahoo實際數字的，公告預估版本要讓路
     total = len(all_etfs)
     for idx, etf in enumerate(all_etfs, 1):
         code, market, name, category = etf["code"], etf["market"], etf["name"], etf["category"]
+        etf_by_code[code] = etf
         print(f"[{idx}/{total}] 抓取除息事件 {code} {name} ({market})")
         events = fetch_dividend_events(code, market)
         for ev in events:
@@ -241,7 +386,9 @@ def main():
                 "category": category,
                 "ex_date": ev["ex_date"],
                 "amount": ev["amount"],
+                "status": "actual",
             })
+            actual_keys.add((code, ev["ex_date"]))
         freq_info = infer_frequency(events)
         meta[code] = {
             "code": code,
@@ -253,6 +400,34 @@ def main():
         }
         # 對來源站溫和一點，避免被判定為濫用
         time.sleep(0.3)
+
+    print("[info] 開始掃描近一個月的收益分配公告(已公告但尚未除息)")
+    try:
+        announced = fetch_announced_events(set(etf_by_code.keys()))
+    except Exception as e:  # noqa: BLE001
+        print(f"[warn] 公告掃描整段失敗，略過這部分，不影響其他資料: {e}", file=sys.stderr)
+        announced = []
+
+    added_announced = 0
+    for a in announced:
+        code = a["code"]
+        key = (code, a["ex_date"])
+        if key in actual_keys or key in {(e["code"], e["ex_date"]) for e in all_events}:
+            continue  # 已經有實際數字了，不需要公告預估版本
+        etf = etf_by_code.get(code)
+        if not etf:
+            continue
+        all_events.append({
+            "code": code,
+            "name": etf["name"],
+            "market": etf["market"],
+            "category": etf["category"],
+            "ex_date": a["ex_date"],
+            "amount": a["amount"],
+            "status": "announced",
+        })
+        added_announced += 1
+    print(f"[info] 公告預估新增 {added_announced} 筆尚未除息的事件")
 
     now_iso = datetime.now(TAIPEI_TZ).isoformat()
     out_dividends = {
