@@ -236,22 +236,24 @@ def strip_tags(html_fragment: str) -> str:
 
 def parse_announcement_rows(html: str) -> list:
     """解析公告列表頁一頁的內容，回傳 [{fund, date(YYYYMMDD), seq, type, href}, ...]。
-    只保留「可見文字含收益分配」的列（不是只看網址的type參數），
-    這是沿用 etf-radar 驗證過的做法：分類欄位本身不一定可靠，看內文字才準。
+
+    不假設頁面一定是傳統 <table><tr><td> 結構(有些新版頁面用 div 排版)，
+    做法是：找到每一個公告連結，往前抓一段文字當作「這一列」的可見內容，
+    只要那段文字裡有出現「收益分配」就算數。這樣不管底層標籤怎麼寫都不影響判斷，
+    比死板地找 <tr>...</tr> 更不容易因為網頁改版而整批抓空。
     """
+    matches = list(HREF_RE.finditer(html))
     rows = []
-    for row_html in ROW_RE.findall(html):
-        href_m = HREF_RE.search(row_html)
-        if not href_m:
+    prev_end = 0
+    for m in matches:
+        window_start = max(prev_end, m.start() - 600)
+        context_text = unicodedata.normalize("NFKC", strip_tags(html[window_start:m.start()]))
+        prev_end = m.end()
+
+        if "收益分配" not in context_text:
             continue
-        text = unicodedata.normalize("NFKC", strip_tags(row_html))
-        # 只看「消息分類」到「發言日期」之間的那一段文字，避免公告標題裡
-        # 剛好出現「收益分配」字樣卻被誤判成該分類(標題內容不受我方控制)
-        cat_m = re.search(r"消息分類\s*(.*?)\s*發言日期", text)
-        category_text = cat_m.group(1) if cat_m else text
-        if "收益分配" not in category_text:
-            continue
-        href = href_m.group(1)
+
+        href = m.group(1)
         qs = href.split("?", 1)[1] if "?" in href else ""
         params = dict(
             (kv.split("=", 1)[0], kv.split("=", 1)[1])
@@ -269,6 +271,18 @@ def parse_announcement_rows(html: str) -> list:
             "type": params.get("type", ""),
             "href": href,
         })
+
+    if not rows:
+        # 診斷用：如果完全解析不到任何一列，印出關鍵線索，
+        # 方便下次直接從Actions記錄判斷是「網頁根本沒回傳資料」
+        # 還是「有資料但關鍵字/連結格式跟預期不同」
+        has_link = bool(HREF_RE.search(html))
+        has_keyword = "收益分配" in html
+        print(
+            f"[diag] 本頁解析為0列 | html長度={len(html)} | "
+            f"含公告連結={has_link} | 含'收益分配'文字={has_keyword}",
+            file=sys.stderr,
+        )
     return rows
 
 
