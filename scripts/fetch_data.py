@@ -34,6 +34,7 @@ import unicodedata
 import urllib.request
 import urllib.error
 from datetime import datetime, timezone, timedelta
+from html import unescape as html_unescape
 from html.parser import HTMLParser
 
 TAIPEI_TZ = timezone(timedelta(hours=8))
@@ -238,13 +239,12 @@ def parse_announcement_rows(html: str) -> list:
 
     直接看每個公告連結網址自己帶的 type 參數是否為 distribution。
     因為我們一開始查詢時就是用 announcementList?type=distribution，
-    這個篩選是伺服器端做的，連結上的type參數就是最可靠的依據，
-    不需要再去猜測周圍可見文字的排版方式(不同頁面版型可能不一致)。
+    這個篩選是伺服器端做的，連結上的type參數就是最可靠的依據。
     """
     matches = list(HREF_RE.finditer(html))
     rows = []
     for m in matches:
-        href = m.group(1)
+        href = html_unescape(m.group(1))  # 網頁原始碼裡 & 常被寫成 &amp;，要先還原才能正確切參數
         qs = href.split("?", 1)[1] if "?" in href else ""
         params = dict(
             (kv.split("=", 1)[0], kv.split("=", 1)[1])
@@ -270,7 +270,11 @@ def parse_announcement_rows(html: str) -> list:
         # 診斷用：如果完全解析不到任何一列，印出關鍵線索
         has_link = bool(matches)
         link_types = sorted({
-            dict((kv.split("=", 1)[0], kv.split("=", 1)[1]) for kv in m.group(1).split("?", 1)[1].split("&") if "=" in kv).get("type", "")
+            dict(
+                (kv.split("=", 1)[0], kv.split("=", 1)[1])
+                for kv in html_unescape(m.group(1)).split("?", 1)[1].split("&")
+                if "=" in kv
+            ).get("type", "")
             for m in matches
         }) if matches else []
         print(
@@ -407,6 +411,7 @@ def main():
             "frequency": freq_info["frequency"],
             "freq_months": freq_info["freq_months"],
         }
+        # 對來源站溫和一點，避免被判定為濫用
         time.sleep(0.3)
 
     print("[info] 開始掃描近一個月的收益分配公告(已公告但尚未除息)")
@@ -421,7 +426,7 @@ def main():
         code = a["code"]
         key = (code, a["ex_date"])
         if key in actual_keys or key in {(e["code"], e["ex_date"]) for e in all_events}:
-            continue
+            continue  # 已經有實際數字了，不需要公告預估版本
         etf = etf_by_code.get(code)
         if not etf:
             continue
