@@ -2,6 +2,7 @@ name: 每日更新ETF除息資料
 
 on:
   schedule:
+    # 台灣時間每天凌晨 02:00 (UTC前一天 18:00)
     - cron: "0 18 * * *"
   workflow_dispatch: {}
 
@@ -43,7 +44,18 @@ jobs:
           git add data/dividends.json data/etf_meta.json
           if git diff --cached --quiet; then
             echo "資料沒有變化，不需要commit"
-          else
-            git commit -m "chore: 自動更新ETF除息資料 $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
+            exit 0
           fi
+          git commit -m "chore: 自動更新ETF除息資料 $(date -u +'%Y-%m-%d %H:%M UTC')"
+
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "push成功"
+              exit 0
+            fi
+            echo "push失敗(可能跟遠端有新的commit撞到)，第 ${attempt} 次，pull --rebase後重試..."
+            git pull --rebase --autostash
+            sleep 5
+          done
+          echo "push重試3次都失敗，放棄本次(資料已經抓好、下次排程會重新抓一次)"
+          exit 1
