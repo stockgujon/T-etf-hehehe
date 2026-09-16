@@ -7,7 +7,7 @@ const FREQ_ORDER = ["月配", "雙月配", "季配", "半年配", "年配", "未
 let STATE = {
   events: [],
   etfs: {},
-  filters: { q: "", market: "全部", category: "全部" },
+  filters: { q: "", market: "全部", category: "全部", months: [] },
 };
 
 async function loadData() {
@@ -219,6 +219,7 @@ function renderAnnualTable() {
     const e = STATE.etfs[code];
     if (STATE.filters.market !== "全部" && e.market !== STATE.filters.market) return false;
     if (STATE.filters.category !== "全部" && e.category !== STATE.filters.category) return false;
+    if (STATE.filters.months.length && !e.freq_months.some((m) => STATE.filters.months.includes(m))) return false;
     if (q && !(e.code.toLowerCase().includes(q) || e.name.toLowerCase().includes(q))) return false;
     return true;
   });
@@ -279,6 +280,34 @@ function setupFilters() {
       document.querySelectorAll("[data-cat-chip]").forEach((c) => c.classList.remove("active"));
       chip.classList.add("active");
       STATE.filters.category = chip.dataset.catChip;
+      renderAnnualTable();
+    });
+  });
+
+  document.querySelectorAll("[data-month-chip]").forEach((chip) => {
+    chip.addEventListener("click", () => {
+      const val = chip.dataset.monthChip;
+      if (val === "全部") {
+        STATE.filters.months = [];
+        document.querySelectorAll("[data-month-chip]").forEach((c) => c.classList.remove("active"));
+        chip.classList.add("active");
+      } else {
+        const m = Number(val);
+        const idx = STATE.filters.months.indexOf(m);
+        if (idx === -1) {
+          STATE.filters.months.push(m);
+          chip.classList.add("active");
+        } else {
+          STATE.filters.months.splice(idx, 1);
+          chip.classList.remove("active");
+        }
+        const allChip = document.querySelector('[data-month-chip="全部"]');
+        if (STATE.filters.months.length === 0) {
+          allChip.classList.add("active");
+        } else {
+          allChip.classList.remove("active");
+        }
+      }
       renderAnnualTable();
     });
   });
