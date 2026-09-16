@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T23:42:50.107163+08:00",
+  "updated_at": "2026-09-16T23:54:29.656957+08:00",
   "events": [
     {
       "code": "00936",
@@ -16893,6 +16893,330 @@
       "ex_date": "2026-09-15",
       "amount": 0.088,
       "status": "actual"
+    },
+    {
+      "code": "00404A",
+      "name": "主動聯博動能50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 0.36,
+      "status": "announced"
+    },
+    {
+      "code": "00730",
+      "name": "富邦臺灣優質高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 0.11,
+      "status": "announced"
+    },
+    {
+      "code": "00770",
+      "name": "國泰北美科技",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 6.0,
+      "status": "announced"
+    },
+    {
+      "code": "00896",
+      "name": "中信綠能及電動車",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 1.45,
+      "status": "announced"
+    },
+    {
+      "code": "00900",
+      "name": "富邦特選高股息30",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 0.075,
+      "status": "announced"
+    },
+    {
+      "code": "00915",
+      "name": "凱基優選高股息30",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 0.6,
+      "status": "announced"
+    },
+    {
+      "code": "00919",
+      "name": "群益台灣精選高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 1.1,
+      "status": "announced"
+    },
+    {
+      "code": "00921",
+      "name": "兆豐龍頭等權重",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 1.0,
+      "status": "announced"
+    },
+    {
+      "code": "00934",
+      "name": "中信成長高股息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 0.33,
+      "status": "announced"
+    },
+    {
+      "code": "00935",
+      "name": "野村臺灣新科技50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 1.83,
+      "status": "announced"
+    },
+    {
+      "code": "00943",
+      "name": "兆豐電子高息等權",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 0.25,
+      "status": "announced"
+    },
+    {
+      "code": "00944",
+      "name": "野村趨勢動能高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 0.109,
+      "status": "announced"
+    },
+    {
+      "code": "00945B",
+      "name": "凱基美國非投等債",
+      "market": "TWSE",
+      "category": "債券型",
+      "ex_date": "2026-09-16",
+      "amount": 0.097,
+      "status": "announced"
+    },
+    {
+      "code": "00952",
+      "name": "凱基台灣AI50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 0.12,
+      "status": "announced"
+    },
+    {
+      "code": "00961",
+      "name": "FT臺灣永續高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 0.19,
+      "status": "announced"
+    },
+    {
+      "code": "00963",
+      "name": "中信全球高股息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 0.1,
+      "status": "announced"
+    },
+    {
+      "code": "00964",
+      "name": "中信亞太高股息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 0.2,
+      "status": "announced"
+    },
+    {
+      "code": "00972",
+      "name": "野村日本動能高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 0.22,
+      "status": "announced"
+    },
+    {
+      "code": "00981A",
+      "name": "主動統一台股增長",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 0.63,
+      "status": "announced"
+    },
+    {
+      "code": "00981T",
+      "name": "平衡凱基雙核收息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 0.082,
+      "status": "announced"
+    },
+    {
+      "code": "00982D",
+      "name": "主動富邦動態入息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 0.052,
+      "status": "announced"
+    },
+    {
+      "code": "00982T",
+      "name": "平衡兆豐台美動能",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 1.0,
+      "status": "announced"
+    },
+    {
+      "code": "00983D",
+      "name": "主動富邦複合收益",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 0.061,
+      "status": "announced"
+    },
+    {
+      "code": "00999A",
+      "name": "主動野村臺灣高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-16",
+      "amount": 0.29,
+      "status": "announced"
+    },
+    {
+      "code": "00710B",
+      "name": "復華彭博非投等債",
+      "market": "TWSE",
+      "category": "債券型",
+      "ex_date": "2026-09-17",
+      "amount": 0.39,
+      "status": "announced"
+    },
+    {
+      "code": "00711B",
+      "name": "復華彭博新興債",
+      "market": "TWSE",
+      "category": "債券型",
+      "ex_date": "2026-09-17",
+      "amount": 0.2,
+      "status": "announced"
+    },
+    {
+      "code": "00712",
+      "name": "復華富時不動產",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-17",
+      "amount": 0.2,
+      "status": "announced"
+    },
+    {
+      "code": "00929",
+      "name": "復華台灣科技優息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-17",
+      "amount": 0.38,
+      "status": "announced"
+    },
+    {
+      "code": "00728",
+      "name": "第一金工業30",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-18",
+      "amount": 0.77,
+      "status": "announced"
+    },
+    {
+      "code": "00918",
+      "name": "大華優利高填息30",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-18",
+      "amount": 1.75,
+      "status": "announced"
+    },
+    {
+      "code": "00994A",
+      "name": "主動第一金台股優",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-18",
+      "amount": 0.257,
+      "status": "announced"
+    },
+    {
+      "code": "00713",
+      "name": "元大台灣高息低波",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-21",
+      "amount": 1.25,
+      "status": "announced"
+    },
+    {
+      "code": "00930",
+      "name": "永豐ESG低碳高息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-09-23",
+      "amount": 0.815,
+      "status": "announced"
+    },
+    {
+      "code": "00406A",
+      "name": "主動中信台灣收益",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-10-05",
+      "amount": 0.138,
+      "status": "announced"
+    },
+    {
+      "code": "00939",
+      "name": "統一台灣高息動能",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-10-05",
+      "amount": 0.125,
+      "status": "announced"
+    },
+    {
+      "code": "00984D",
+      "name": "主動聯博全球非投",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-10-05",
+      "amount": 0.085,
+      "status": "announced"
     }
   ]
 }
