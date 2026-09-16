@@ -1,0 +1,353 @@
+:root {
+  --bg: #0e1720;
+  --surface: #16212c;
+  --surface-raised: #1c2933;
+  --border: #263341;
+  --text: #eaeff3;
+  --text-muted: #8da0b3;
+  --accent: #d7b369;
+  --today-ring: #d7b369;
+
+  --freq-monthly: #4f9d69;
+  --freq-bimonthly: #4e8fc7;
+  --freq-quarterly: #d7b369;
+  --freq-semiannual: #c97a4a;
+  --freq-annual: #9673c9;
+  --freq-unknown: #5b6b7a;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Noto Sans TC", -apple-system, "PingFang TC", "Microsoft JhengHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.num {
+  font-family: "Space Grotesk", "Noto Sans TC", sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 28px 20px 80px;
+}
+
+/* ---------- Header / hero ---------- */
+.hero {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 28px;
+}
+
+.hero h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.hero .updated {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.hero .updated .num { color: var(--text); }
+
+/* ---------- Section headings ---------- */
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 40px 0 16px;
+}
+
+.section-head h2 {
+  font-size: 17px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.section-head p {
+  margin: 4px 0 0;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+/* ---------- Legend ---------- */
+.legend {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.legend .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 5px; }
+
+/* ---------- Calendar block ---------- */
+.calendars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.month-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.month-card .month-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+.month-card .month-title .yr { color: var(--text-muted); font-weight: 400; font-size: 12px; }
+
+.dow-row, .day-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+.dow-row { margin-bottom: 6px; }
+.dow-row span {
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.day-cell {
+  min-height: 58px;
+  background: var(--surface-raised);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  position: relative;
+}
+.day-cell.empty { background: transparent; }
+.day-cell.today { outline: 1.5px solid var(--today-ring); }
+
+.day-num {
+  font-size: 11px;
+  color: var(--text-muted);
+  padding-left: 2px;
+}
+.day-cell.today .day-num { color: var(--accent); font-weight: 700; }
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.etf-badge {
+  font-size: 10px;
+  line-height: 1;
+  padding: 3px 4px;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+  cursor: pointer;
+  border-left: 3px solid var(--freq-unknown);
+  white-space: nowrap;
+}
+.etf-badge.freq-月配 { border-left-color: var(--freq-monthly); }
+.etf-badge.freq-雙月配 { border-left-color: var(--freq-bimonthly); }
+.etf-badge.freq-季配 { border-left-color: var(--freq-quarterly); }
+.etf-badge.freq-半年配 { border-left-color: var(--freq-semiannual); }
+.etf-badge.freq-年配 { border-left-color: var(--freq-annual); }
+
+.etf-more {
+  font-size: 10px;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 2px 4px;
+}
+.etf-more:hover { color: var(--text); }
+
+/* ---------- Popover / modal ---------- */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5,9,13,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 20px;
+}
+.overlay.open { display: flex; }
+
+.popover {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  max-width: 360px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 18px;
+}
+.popover h3 {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+.popover .item {
+  border-top: 1px solid var(--border);
+  padding: 10px 0;
+}
+.popover .item:first-of-type { border-top: none; padding-top: 0; }
+.popover .item .code-name { font-weight: 700; font-size: 14px; }
+.popover .item .row { display: flex; justify-content: space-between; font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+.popover .item .row .val { color: var(--text); }
+.popover .close {
+  margin-top: 14px;
+  width: 100%;
+  padding: 8px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+.popover .close:hover { color: var(--text); border-color: var(--text-muted); }
+
+/* ---------- Filters ---------- */
+.filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.filters input[type="search"] {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 7px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  min-width: 160px;
+  flex: 1;
+}
+.chip {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: 12px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  cursor: pointer;
+  user-select: none;
+}
+.chip.active { color: var(--bg); background: var(--accent); border-color: var(--accent); }
+
+/* ---------- Annual table ---------- */
+.table-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+table.annual {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 760px;
+  font-size: 12.5px;
+}
+table.annual thead th {
+  position: sticky;
+  top: 0;
+  background: var(--surface);
+  color: var(--text-muted);
+  font-weight: 600;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+table.annual thead th.name-col { position: sticky; left: 0; z-index: 2; text-align: left; }
+table.annual tbody td.name-col {
+  position: sticky;
+  left: 0;
+  background: var(--surface);
+  z-index: 1;
+}
+table.annual td {
+  padding: 7px 6px;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+table.annual td.name-col {
+  text-align: left;
+  white-space: nowrap;
+}
+table.annual td.name-col .code { font-weight: 700; }
+table.annual td.name-col .nm { color: var(--text-muted); margin-left: 6px; }
+table.annual td.name-col .tag {
+  display: inline-block;
+  font-size: 10px;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0 4px;
+  margin-left: 6px;
+}
+table.annual tbody tr:hover td { background: rgba(255,255,255,0.03); }
+table.annual tbody tr:hover td.name-col { background: #1a2732; }
+
+.mo-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+  background: var(--border);
+}
+.mo-dot.on.freq-月配 { background: var(--freq-monthly); }
+.mo-dot.on.freq-雙月配 { background: var(--freq-bimonthly); }
+.mo-dot.on.freq-季配 { background: var(--freq-quarterly); }
+.mo-dot.on.freq-半年配 { background: var(--freq-semiannual); }
+.mo-dot.on.freq-年配 { background: var(--freq-annual); }
+
+.empty-state {
+  color: var(--text-muted);
+  font-size: 13px;
+  padding: 30px;
+  text-align: center;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-md);
+}
+
+footer {
+  margin-top: 50px;
+  color: var(--text-muted);
+  font-size: 12px;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+footer a { color: var(--text-muted); }
+
+@media (max-width: 640px) {
+  .day-cell { min-height: 46px; }
+  .etf-badge { font-size: 9px; }
+}
