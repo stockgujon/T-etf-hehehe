@@ -11,10 +11,11 @@
      從中篩選「產業別」為 ETF 的列。
   2. 已發生的除息事件(status=actual)：Yahoo Finance chart API 的 dividends 事件
      上市 ETF 用 {代號}.TW，上櫃 ETF 用 {代號}.TWO
-  3. 已公告但尚未除息的事件(status=announced)：TWSE「e添富」平台的收益分配公告
-     (https://www.twse.com.tw/zh/ETFortune/announcementList?type=distribution)，
-     這是全市場(上市+上櫃ETF)共用的一份公告列表，只掃最近約35天，
-     每篇公告內文用關鍵字解析出「除息交易日」與「預計/預估配發金額」。
+  3. 已公告但尚未除息的事件(status=announced)：TWSE「e添富」平台的公告列表
+     (https://www.twse.com.tw/zh/ETFortune/announcementList)，
+     這是全市場(上市+上櫃ETF)共用的一份「全部類別」公告列表，只掃最近約35天，
+     不篩證交所自己的分類(因為分類不可靠，同一份收益分配公告可能被標成別的type)，
+     改成每篇都嘗試從內文解析「除息交易日」與「配發金額」，能解析出來的才算數。
      同一檔同一天如果Yahoo已經有實際數字，以實際數字為準，公告預估的那筆會被捨棄。
 
 這些都不是官方「文件化」的公開API，是社群長期驗證可用/我方直接觀察頁面格式後
@@ -51,7 +52,7 @@ COMMODITY_HINTS = ["原油", "黃金", "黄金", "白銀", "商品", "期货", "
 
 USER_AGENT = "Mozilla/5.0 (compatible; tw-etf-dividend-tracker/1.0)"
 
-ANNOUNCEMENT_LIST_URL = "https://www.twse.com.tw/zh/ETFortune/announcementList?type=distribution&max=10&offset={offset}"
+ANNOUNCEMENT_LIST_URL = "https://www.twse.com.tw/zh/ETFortune/announcementList?max=10&offset={offset}"
 ANNOUNCEMENT_LOOKBACK_DAYS = 35  # 抓「近一個月」的公告，多留一點緩衝
 ANNOUNCEMENT_MAX_PAGES = 40  # 安全上限，避免萬一日期判斷失準時無限翻頁
 
@@ -237,9 +238,11 @@ def strip_tags(html_fragment: str) -> str:
 def parse_announcement_rows(html: str) -> list:
     """解析公告列表頁一頁的內容，回傳 [{fund, date(YYYYMMDD), seq, type, href}, ...]。
 
-    直接看每個公告連結網址自己帶的 type 參數是否為 distribution。
-    因為我們一開始查詢時就是用 announcementList?type=distribution，
-    這個篩選是伺服器端做的，連結上的type參數就是最可靠的依據。
+    這裡抓的是「全部類別」的公告列表，不篩分類。
+    原因：證交所自己的分類欄位不可靠，有些內容明明是收益分配(有除息交易日+
+    配發金額)，卻被歸到別的type(甚至type=all)，只篩type=distribution會漏掉。
+    改成：先把候選公告都收集起來，實際過不過關由後面「能不能從內文解析出
+    除息交易日+金額」來決定，這樣不管證交所怎麼分類都不影響。
     """
     matches = list(HREF_RE.finditer(html))
     rows = []
@@ -253,40 +256,28 @@ def parse_announcement_rows(html: str) -> list:
         )
         fund = params.get("fund")
         date = params.get("date")  # 格式 YYYYMMDD，西元
-        etype = params.get("type", "")
         if not (fund and date and re.match(r"^\d{8}$", date)):
-            continue
-        if etype != "distribution":
             continue
         rows.append({
             "fund": fund,
             "date": date,
             "seq": params.get("seq", "1"),
-            "type": etype,
+            "type": params.get("type", ""),
             "href": href,
         })
 
     if not rows:
         # 診斷用：如果完全解析不到任何一列，印出關鍵線索
-        has_link = bool(matches)
-        link_types = sorted({
-            dict(
-                (kv.split("=", 1)[0], kv.split("=", 1)[1])
-                for kv in html_unescape(m.group(1)).split("?", 1)[1].split("&")
-                if "=" in kv
-            ).get("type", "")
-            for m in matches
-        }) if matches else []
         print(
-            f"[diag] 本頁解析為0列 | html長度={len(html)} | "
-            f"連結數={len(matches)} | 連結上出現過的type值={link_types}",
+            f"[diag] 本頁解析為0列 | html長度={len(html)} | 連結數={len(matches)}",
             file=sys.stderr,
         )
     return rows
 
 
 def extract_ex_date_and_amount(detail_html: str):
-    """從公告內文解析「除息交易日」與「預計/預估/實際配發金額」。
+    """從公告內文解析「除息交易日」與「配發金額」。
+    金額不要求一定有預計/預估等前綴字(有些公告直接寫「配發金額」，沒有前綴詞)。
     找不到就回傳 (None, None)，呼叫端要自行略過該筆。
     """
     text = strip_tags(detail_html)
@@ -304,7 +295,7 @@ def extract_ex_date_and_amount(detail_html: str):
     amount = None
     for am in AMOUNT_RE.finditer(text):
         context = text[max(0, am.start() - 40): am.start()]
-        if "配發金額" in context and AMOUNT_KEYWORD_RE.search(context):
+        if "配發金額" in context:
             try:
                 amount = round(float(am.group(1)), 4)
             except ValueError:
@@ -315,7 +306,7 @@ def extract_ex_date_and_amount(detail_html: str):
 
 
 def fetch_announced_events(etf_codes: set) -> list:
-    """掃近一個月的「收益分配」公告，抓出還沒發生、但已經公告的除息日+預估金額。
+    """掃近一個月的公告，抓出還沒發生、但已經公告的除息日+金額。
     這是全市場共用的一份列表，頁數只跟時間範圍有關，跟追蹤幾檔ETF無關。
     單一頁或單一篇公告失敗都只跳過該筆，不影響其他資料。
     """
@@ -361,7 +352,7 @@ def fetch_announced_events(etf_codes: set) -> list:
                 announced.append({"code": row["fund"], "ex_date": ex_date, "amount": amount})
             time.sleep(0.3)
 
-        print(f"[info] 公告列表第{page + 1}頁解析出 {len(rows)} 則收益分配公告")
+        print(f"[info] 公告列表第{page + 1}頁解析出 {len(rows)} 則候選公告")
         if reached_cutoff:
             break
         time.sleep(0.3)
@@ -414,7 +405,7 @@ def main():
         # 對來源站溫和一點，避免被判定為濫用
         time.sleep(0.3)
 
-    print("[info] 開始掃描近一個月的收益分配公告(已公告但尚未除息)")
+    print("[info] 開始掃描近一個月的公告(已公告但尚未除息)")
     try:
         announced = fetch_announced_events(set(etf_by_code.keys()))
     except Exception as e:  # noqa: BLE001
