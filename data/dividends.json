@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T16:14:14.284793+08:00",
+  "updated_at": "2026-09-19T02:22:10.703224+08:00",
   "events": [
     {
       "code": "00687B",
@@ -17345,15 +17345,6 @@
       "status": "announced"
     },
     {
-      "code": "00930",
-      "name": "永豐ESG低碳高息",
-      "market": "TWSE",
-      "category": "高股息",
-      "ex_date": "2026-09-23",
-      "amount": 0.815,
-      "status": "announced"
-    },
-    {
       "code": "00406A",
       "name": "主動中信台灣收益",
       "market": "TWSE",
@@ -17414,6 +17405,15 @@
       "category": "債券型",
       "ex_date": "2026-10-07",
       "amount": 0.053,
+      "status": "announced"
+    },
+    {
+      "code": "00400A",
+      "name": "主動國泰動能高息",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-10-08",
+      "amount": 0.12,
       "status": "announced"
     }
   ]
