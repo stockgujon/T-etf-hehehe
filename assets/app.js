@@ -208,7 +208,9 @@ function closePopover() {
 
 function renderAnnualTable() {
   const wrap = document.getElementById("annual-table-wrap");
-  const codes = Object.keys(STATE.etfs).sort();
+  const codes = Object.keys(STATE.etfs)
+    .filter((code) => STATE.etfs[code].frequency !== "未知") // 沒有真實除息紀錄的(多半是槓桿/反向/期貨型)不佔總表版面
+    .sort();
   if (!codes.length) {
     wrap.innerHTML = `<div class="empty-state">尚無ETF清單資料 — 每日排程第一次成功執行後會自動出現在這裡。</div>`;
     return;
