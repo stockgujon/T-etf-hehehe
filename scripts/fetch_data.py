@@ -9,13 +9,19 @@
      strMode=2 -> 上市 (TWSE) 全部有價證券
      strMode=4 -> 上櫃 (TPEx) 全部有價證券
      從中篩選「產業別」為 ETF 的列。
-  2. 已發生的除息事件(status=actual)：Yahoo Finance chart API 的 dividends 事件
+  2. ETF分類(category)：TWSE「e添富」平台每檔ETF自己的商品頁
+     (https://www.twse.com.tw/zh/ETFortune/etfInfo/<代號>)，
+     裡面「證券類別」欄位是官方分類(如「股票槓反ETF」「台股ETF」)，
+     「主題/因子」欄位會列出「高股息」「高息低波動」等標籤。
+     用這兩個欄位分成：槓桿反向、債券型、商品期貨型、高股息、一般股票型。
+     抓不到才退回用ETF名稱關鍵字猜測(LEVERAGE_INVERSE_HINTS等)。
+  3. 已發生的除息事件(status=actual)：Yahoo Finance chart API 的 dividends 事件
      上市 ETF 用 {代號}.TW，上櫃 ETF 用 {代號}.TWO
-  3. 已公告但尚未除息的事件(status=announced)：TWSE「e添富」平台的公告列表
+  4. 已公告但尚未除息的事件(status=announced)：TWSE「e添富」平台的公告列表
      (https://www.twse.com.tw/zh/ETFortune/announcementList)，
      這是全市場(上市+上櫃ETF)共用的一份「全部類別」公告列表，只掃最近約35天，
-     不篩證交所自己的分類(因為分類不可靠，同一份收益分配公告可能被標成別的type)，
-     改成每篇都嘗試從內文解析「除息交易日」與「配發金額」，能解析出來的才算數。
+     不篩證交所自己的分類(因為分類不可靠)，改成每篇都嘗試從內文解析
+     「除息交易日」與「配發金額」，能解析出來的才算數。
      同一檔同一天如果Yahoo已經有實際數字，以實際數字為準，公告預估的那筆會被捨棄。
 
 這些都不是官方「文件化」的公開API，是社群長期驗證可用/我方直接觀察頁面格式後
@@ -45,10 +51,14 @@ ISIN_URLS = {
     "TPEx": "https://isin.twse.com.tw/isin/C_public.jsp?strMode=4",
 }
 
-# 用來粗略判斷ETF類別的關鍵字(只需要「大概」，之後可再微調)
+# 用來猜測ETF類別的關鍵字，只在「官方分類頁面抓不到」時當備援使用
 LEVERAGE_INVERSE_HINTS = ["正2", "正二", "反1", "反一", "槓桿", "2X", "反向"]
 BOND_HINTS = ["债", "債", "公司債", "美債", "公債", "投等債", "高收債"]
 COMMODITY_HINTS = ["原油", "黃金", "黄金", "白銀", "商品", "期货", "期貨", "石油"]
+HIGH_DIVIDEND_HINTS = ["高股息", "高息", "優息", "優利", "高填息"]
+
+ETF_INFO_URL = "https://www.twse.com.tw/zh/ETFortune/etfInfo/{code}"
+HIGH_DIVIDEND_TAGS = {"高股息", "高息低波動"}
 
 USER_AGENT = "Mozilla/5.0 (compatible; tw-etf-dividend-tracker/1.0)"
 
@@ -119,6 +129,7 @@ class ISINTableParser(HTMLParser):
 
 
 def guess_category(name: str) -> str:
+    """名稱關鍵字猜測，只在官方分類頁面抓不到時當備援。"""
     for kw in LEVERAGE_INVERSE_HINTS:
         if kw in name:
             return "槓桿反向"
@@ -128,7 +139,53 @@ def guess_category(name: str) -> str:
     for kw in COMMODITY_HINTS:
         if kw in name:
             return "商品期貨型"
+    for kw in HIGH_DIVIDEND_HINTS:
+        if kw in name:
+            return "高股息"
     return "一般股票型"
+
+
+def fetch_etf_classification(code: str):
+    """抓該ETF在e添富的商品頁，回傳 (證券類別原始字串, 主題/因子標籤list)。
+    抓不到或格式跑掉就回傳 (None, [])，呼叫端會退回用名稱關鍵字猜測。
+    """
+    url = ETF_INFO_URL.format(code=code)
+    try:
+        html = http_get(url, max_retries=2, base_delay=8)
+    except Exception as e:  # noqa: BLE001
+        print(f"[warn] {code} 分類頁抓取失敗，退回用名稱猜測: {e}", file=sys.stderr)
+        return None, []
+
+    text = strip_tags(html)
+    text = re.sub(r"[ \t]+", " ", text)
+
+    asset_type = None
+    m = re.search(r"證券類別\s*([^\s]*?ETF)", text)
+    if m:
+        asset_type = m.group(1)
+
+    tags = []
+    m2 = re.search(r"主題/?因子[:：]?\s*(.*?)資產規模", text, re.S)
+    if m2:
+        tag_blob = re.sub(r"\s+", " ", m2.group(1)).strip()
+        tags = [t for t in tag_blob.split(" ") if t]
+
+    return asset_type, tags
+
+
+def classify_etf(name: str, asset_type: str, tags: list) -> str:
+    """依官方「證券類別」+「主題/因子」標籤決定分類，抓不到才退回名稱猜測。"""
+    if asset_type:
+        if any(kw in asset_type for kw in ("槓反", "槓桿", "反向")):
+            return "槓桿反向"
+        if "債" in asset_type:
+            return "債券型"
+        if any(kw in asset_type for kw in ("期貨", "商品")):
+            return "商品期貨型"
+        if any(t in HIGH_DIVIDEND_TAGS for t in tags):
+            return "高股息"
+        return "一般股票型"
+    return guess_category(name)
 
 
 def fetch_etf_list(market: str) -> list:
@@ -213,6 +270,7 @@ def infer_frequency(events: list) -> dict:
         recent = events[-4:]
 
     months = sorted({datetime.fromisoformat(e["ex_date"]).date().month for e in recent})
+    # 用最近12個月的事件數估頻率，再退回18個月的資料估算
     count = len(recent)
     span_years = max(len(recent) / 12.0, 0.5)
     per_year = count / span_years if span_years else count
@@ -276,8 +334,7 @@ def parse_announcement_rows(html: str) -> list:
 
 
 def extract_ex_date_and_amount(detail_html: str):
-    """從公告內文解析「除息交易日」與「配發金額」。
-    金額不要求一定有預計/預估等前綴字(有些公告直接寫「配發金額」，沒有前綴詞)。
+    """從公告內文解析「除息交易日」與「預計/預估/實際配發金額」。
     找不到就回傳 (None, None)，呼叫端要自行略過該筆。
     """
     text = strip_tags(detail_html)
@@ -306,7 +363,7 @@ def extract_ex_date_and_amount(detail_html: str):
 
 
 def fetch_announced_events(etf_codes: set) -> list:
-    """掃近一個月的公告，抓出還沒發生、但已經公告的除息日+金額。
+    """掃近一個月的「收益分配」公告，抓出還沒發生、但已經公告的除息日+預估金額。
     這是全市場共用的一份列表，頁數只跟時間範圍有關，跟追蹤幾檔ETF無關。
     單一頁或單一篇公告失敗都只跳過該筆，不影響其他資料。
     """
@@ -352,7 +409,7 @@ def fetch_announced_events(etf_codes: set) -> list:
                 announced.append({"code": row["fund"], "ex_date": ex_date, "amount": amount})
             time.sleep(0.3)
 
-        print(f"[info] 公告列表第{page + 1}頁解析出 {len(rows)} 則候選公告")
+        print(f"[info] 公告列表第{page + 1}頁解析出 {len(rows)} 則收益分配公告")
         if reached_cutoff:
             break
         time.sleep(0.3)
@@ -371,6 +428,15 @@ def main():
     if not all_etfs:
         print("[fatal] 兩個市場的ETF清單都抓不到，中止", file=sys.stderr)
         sys.exit(1)
+
+    print("[info] 開始抓取每檔ETF的官方分類(證券類別/主題因子)")
+    total_for_class = len(all_etfs)
+    for idx, etf in enumerate(all_etfs, 1):
+        asset_type, tags = fetch_etf_classification(etf["code"])
+        etf["category"] = classify_etf(etf["name"], asset_type, tags)
+        if idx % 50 == 0 or idx == total_for_class:
+            print(f"[info] 分類進度 {idx}/{total_for_class}")
+        time.sleep(0.2)
 
     all_events = []
     meta = {}
@@ -405,7 +471,7 @@ def main():
         # 對來源站溫和一點，避免被判定為濫用
         time.sleep(0.3)
 
-    print("[info] 開始掃描近一個月的公告(已公告但尚未除息)")
+    print("[info] 開始掃描近一個月的收益分配公告(已公告但尚未除息)")
     try:
         announced = fetch_announced_events(set(etf_by_code.keys()))
     except Exception as e:  # noqa: BLE001
