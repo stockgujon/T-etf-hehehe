@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-18T02:12:26.213659+08:00",
+  "updated_at": "2026-09-18T16:14:14.284793+08:00",
   "etfs": {
     "00400A": {
       "code": "00400A",
       "name": "主動國泰動能高息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "雙月配",
       "freq_months": [
         7,
@@ -54,7 +54,7 @@
       "code": "00405A",
       "name": "主動富邦台灣龍耀",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "未知",
       "freq_months": []
     },
@@ -156,7 +156,7 @@
       "code": "0056",
       "name": "元大高股息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -569,7 +569,7 @@
       "code": "00682U",
       "name": "期元大美元指數",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "商品期貨型",
       "frequency": "未知",
       "freq_months": []
     },
@@ -649,7 +649,7 @@
       "code": "00693U",
       "name": "期街口S&P黃豆",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "商品期貨型",
       "frequency": "未知",
       "freq_months": []
     },
@@ -665,7 +665,7 @@
       "code": "00701",
       "name": "國泰股利精選30",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "雙月配",
       "freq_months": [
         1,
@@ -676,7 +676,7 @@
       "code": "00702",
       "name": "國泰標普低波高息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "雙月配",
       "freq_months": [
         1,
@@ -753,7 +753,7 @@
       "code": "00712",
       "name": "復華富時不動產",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         3,
@@ -766,7 +766,7 @@
       "code": "00713",
       "name": "元大台灣高息低波",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         3,
@@ -800,7 +800,7 @@
       "code": "00717",
       "name": "富邦美國特別股",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -826,7 +826,7 @@
       "code": "00730",
       "name": "富邦臺灣優質高息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -847,7 +847,7 @@
       "code": "00731",
       "name": "復華富時高息低波",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         3,
@@ -951,7 +951,7 @@
       "code": "00763U",
       "name": "期街口道瓊銅",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "商品期貨型",
       "frequency": "未知",
       "freq_months": []
     },
@@ -970,7 +970,7 @@
       "code": "00771",
       "name": "元大US高息特別股",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         2,
@@ -1037,7 +1037,7 @@
       "code": "00852L",
       "name": "國泰美國道瓊正2",
       "market": "TWSE",
-      "category": "槓桿反向",
+      "category": "一般股票型",
       "frequency": "未知",
       "freq_months": []
     },
@@ -1077,7 +1077,7 @@
       "code": "00878",
       "name": "國泰永續高股息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         2,
@@ -1101,7 +1101,7 @@
       "code": "00882",
       "name": "中信中國高股息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "雙月配",
       "freq_months": [
         1,
@@ -1210,7 +1210,7 @@
       "code": "00900",
       "name": "富邦特選高股息30",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -1283,7 +1283,7 @@
       "code": "00907",
       "name": "永豐優息存股",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         2,
@@ -1364,7 +1364,7 @@
       "code": "00915",
       "name": "凱基優選高股息30",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         3,
@@ -1398,7 +1398,7 @@
       "code": "00918",
       "name": "大華優利高填息30",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         3,
@@ -1411,7 +1411,7 @@
       "code": "00919",
       "name": "群益台灣精選高息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         3,
@@ -1500,7 +1500,7 @@
       "code": "00929",
       "name": "復華台灣科技優息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -1520,7 +1520,7 @@
       "code": "00930",
       "name": "永豐ESG低碳高息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -1535,7 +1535,7 @@
       "code": "00932",
       "name": "兆豐永續高息等權",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         2,
@@ -1548,7 +1548,7 @@
       "code": "00934",
       "name": "中信成長高股息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -1580,7 +1580,7 @@
       "code": "00936",
       "name": "台新永續高息中小",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -1614,7 +1614,7 @@
       "code": "00939",
       "name": "統一台灣高息動能",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -1634,7 +1634,7 @@
       "code": "00940",
       "name": "元大台灣價值高息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -1663,7 +1663,7 @@
       "code": "00943",
       "name": "兆豐電子高息等權",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -1684,7 +1684,7 @@
       "code": "00944",
       "name": "野村趨勢動能高息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -1726,7 +1726,7 @@
       "code": "00946",
       "name": "群益科技高息成長",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -1828,7 +1828,7 @@
       "code": "00956",
       "name": "中信日經高股息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -1854,7 +1854,7 @@
       "code": "00961",
       "name": "FT臺灣永續高息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -1875,7 +1875,7 @@
       "code": "00962",
       "name": "台新AI優息動能",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -1896,7 +1896,7 @@
       "code": "00963",
       "name": "中信全球高股息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -1917,7 +1917,7 @@
       "code": "00964",
       "name": "中信亞太高股息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "月配",
       "freq_months": [
         1,
@@ -1956,7 +1956,7 @@
       "code": "00972",
       "name": "野村日本動能高息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "半年配",
       "freq_months": [
         9
@@ -2076,7 +2076,7 @@
       "code": "00984A",
       "name": "主動安聯台灣高息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "雙月配",
       "freq_months": [
         1,
@@ -2242,7 +2242,7 @@
       "code": "00999A",
       "name": "主動野村臺灣高息",
       "market": "TWSE",
-      "category": "一般股票型",
+      "category": "高股息",
       "frequency": "半年配",
       "freq_months": [
         9
@@ -3736,7 +3736,8 @@
       "freq_months": [
         6,
         7,
-        8
+        8,
+        9
       ]
     },
     "00986B": {
@@ -3763,7 +3764,8 @@
       "freq_months": [
         6,
         7,
-        8
+        8,
+        9
       ]
     },
     "00987B": {
@@ -3823,9 +3825,10 @@
       "name": "主動復華金融股息",
       "market": "TPEx",
       "category": "一般股票型",
-      "frequency": "半年配",
+      "frequency": "季配",
       "freq_months": [
-        6
+        6,
+        9
       ]
     }
   }
