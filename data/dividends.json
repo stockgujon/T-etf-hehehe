@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T02:20:28.988452+08:00",
+  "updated_at": "2026-09-23T02:22:36.184394+08:00",
   "events": [
     {
       "code": "00764B",
@@ -16985,13 +16985,67 @@
       "status": "actual"
     },
     {
+      "code": "00697B",
+      "name": "元大美債7-10",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-09-21",
+      "amount": 0.31,
+      "status": "actual"
+    },
+    {
       "code": "00713",
       "name": "元大台灣高息低波",
       "market": "TWSE",
       "category": "高股息",
       "ex_date": "2026-09-21",
       "amount": 1.25,
-      "status": "announced"
+      "status": "actual"
+    },
+    {
+      "code": "00751B",
+      "name": "元大AAA至A公司債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-09-21",
+      "amount": 0.43,
+      "status": "actual"
+    },
+    {
+      "code": "00787B",
+      "name": "元大10年IG醫療債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-09-21",
+      "amount": 0.41,
+      "status": "actual"
+    },
+    {
+      "code": "00967B",
+      "name": "元大優息美債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-09-21",
+      "amount": 0.033,
+      "status": "actual"
+    },
+    {
+      "code": "00968B",
+      "name": "元大優息投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-09-21",
+      "amount": 0.043,
+      "status": "actual"
+    },
+    {
+      "code": "00981B",
+      "name": "第一金優選非投債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-09-21",
+      "amount": 0.063,
+      "status": "actual"
     },
     {
       "code": "00930",
