@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T02:19:52.396829+08:00",
+  "updated_at": "2026-09-25T02:19:57.219599+08:00",
   "etfs": {
     "00400A": {
       "code": "00400A",
@@ -3818,8 +3818,10 @@
       "name": "國泰收益非投等債",
       "market": "TPEx",
       "category": "債券型",
-      "frequency": "未知",
-      "freq_months": []
+      "frequency": "半年配",
+      "freq_months": [
+        9
+      ]
     },
     "00998A": {
       "code": "00998A",
