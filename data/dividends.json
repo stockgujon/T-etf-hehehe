@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-10-02T06:25:52.643473+08:00",
+  "updated_at": "2026-10-03T05:53:15.491425+08:00",
   "events": [
-    {
-      "code": "00939",
-      "name": "統一台灣高息動能",
-      "market": "TWSE",
-      "category": "高股息",
-      "ex_date": "2024-10-02",
-      "amount": 0.063,
-      "status": "actual"
-    },
     {
       "code": "00939",
       "name": "統一台灣高息動能",
@@ -800,15 +791,6 @@
       "category": "債券型",
       "ex_date": "2024-11-18",
       "amount": 0.449,
-      "status": "actual"
-    },
-    {
-      "code": "00847B",
-      "name": "中信美國市政債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-11-18",
-      "amount": 0.28,
       "status": "actual"
     },
     {
@@ -2443,15 +2425,6 @@
     {
       "code": "00841B",
       "name": "凱基AAA-AA公司債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2025-02-18",
-      "amount": 0.35,
-      "status": "actual"
-    },
-    {
-      "code": "00847B",
-      "name": "中信美國市政債",
       "market": "TPEx",
       "category": "債券型",
       "ex_date": "2025-02-18",
@@ -4382,15 +4355,6 @@
       "category": "債券型",
       "ex_date": "2025-05-19",
       "amount": 0.476,
-      "status": "actual"
-    },
-    {
-      "code": "00847B",
-      "name": "中信美國市政債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2025-05-19",
-      "amount": 0.35,
       "status": "actual"
     },
     {
@@ -6353,15 +6317,6 @@
       "category": "債券型",
       "ex_date": "2025-08-18",
       "amount": 0.435,
-      "status": "actual"
-    },
-    {
-      "code": "00847B",
-      "name": "中信美國市政債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2025-08-18",
-      "amount": 0.35,
       "status": "actual"
     },
     {
@@ -8441,15 +8396,6 @@
       "category": "債券型",
       "ex_date": "2025-11-18",
       "amount": 0.442,
-      "status": "actual"
-    },
-    {
-      "code": "00847B",
-      "name": "中信美國市政債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2025-11-18",
-      "amount": 0.35,
       "status": "actual"
     },
     {
@@ -10964,15 +10910,6 @@
       "status": "actual"
     },
     {
-      "code": "00847B",
-      "name": "中信美國市政債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2026-02-26",
-      "amount": 0.35,
-      "status": "actual"
-    },
-    {
       "code": "00850",
       "name": "元大臺灣ESG永續",
       "market": "TWSE",
@@ -13211,15 +13148,6 @@
       "category": "債券型",
       "ex_date": "2026-05-19",
       "amount": 0.437,
-      "status": "actual"
-    },
-    {
-      "code": "00847B",
-      "name": "中信美國市政債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2026-05-19",
-      "amount": 0.35,
       "status": "actual"
     },
     {
@@ -15740,15 +15668,6 @@
       "category": "債券型",
       "ex_date": "2026-08-18",
       "amount": 0.465,
-      "status": "actual"
-    },
-    {
-      "code": "00847B",
-      "name": "中信美國市政債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2026-08-18",
-      "amount": 0.35,
       "status": "actual"
     },
     {
