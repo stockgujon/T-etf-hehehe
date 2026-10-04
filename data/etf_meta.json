@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T04:37:31.714287+08:00",
+  "updated_at": "2026-10-05T04:56:39.823944+08:00",
   "etfs": {
     "00400A": {
       "code": "00400A",
@@ -96,6 +96,14 @@
     "00410A": {
       "code": "00410A",
       "name": "主動永豐科技趨勢",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "frequency": "未知",
+      "freq_months": []
+    },
+    "00412A": {
+      "code": "00412A",
+      "name": "主動安聯亞半導體",
       "market": "TWSE",
       "category": "一般股票型",
       "frequency": "未知",
