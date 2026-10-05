@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-10-05T04:56:39.823944+08:00",
+  "updated_at": "2026-10-06T07:50:31.565651+08:00",
   "events": [
-    {
-      "code": "00939",
-      "name": "統一台灣高息動能",
-      "market": "TWSE",
-      "category": "高股息",
-      "ex_date": "2024-10-04",
-      "amount": 0.063,
-      "status": "actual"
-    },
     {
       "code": "00946",
       "name": "群益科技高息成長",
@@ -16982,7 +16973,7 @@
       "category": "一般股票型",
       "ex_date": "2026-10-05",
       "amount": 0.138,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00939",
@@ -16991,7 +16982,52 @@
       "category": "高股息",
       "ex_date": "2026-10-05",
       "amount": 0.125,
-      "status": "announced"
+      "status": "actual"
+    },
+    {
+      "code": "00950B",
+      "name": "凱基A級公司債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-05",
+      "amount": 0.063,
+      "status": "actual"
+    },
+    {
+      "code": "00959B",
+      "name": "大華投等美債15Y+",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-05",
+      "amount": 0.048,
+      "status": "actual"
+    },
+    {
+      "code": "00966B",
+      "name": "統一ESG投等債15+",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-05",
+      "amount": 0.068,
+      "status": "actual"
+    },
+    {
+      "code": "00983B",
+      "name": "大華優利美公債20",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-05",
+      "amount": 0.06,
+      "status": "actual"
+    },
+    {
+      "code": "00984B",
+      "name": "大華優利美A債15",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-05",
+      "amount": 0.079,
+      "status": "actual"
     },
     {
       "code": "00984D",
@@ -17000,7 +17036,7 @@
       "category": "一般股票型",
       "ex_date": "2026-10-05",
       "amount": 0.085,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00940",
