@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T06:18:44.479777+08:00",
+  "updated_at": "2026-10-08T06:49:20.134079+08:00",
   "events": [
     {
       "code": "00946",
@@ -17054,7 +17054,7 @@
       "category": "高股息",
       "ex_date": "2026-10-07",
       "amount": 0.055,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00946",
@@ -17063,7 +17063,7 @@
       "category": "高股息",
       "ex_date": "2026-10-07",
       "amount": 0.058,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00953B",
@@ -17072,7 +17072,7 @@
       "category": "債券型",
       "ex_date": "2026-10-07",
       "amount": 0.067,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00985B",
@@ -17081,7 +17081,7 @@
       "category": "債券型",
       "ex_date": "2026-10-07",
       "amount": 0.053,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00400A",
