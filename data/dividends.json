@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T04:57:31.595905+08:00",
+  "updated_at": "2026-10-17T04:30:30.271191+08:00",
   "events": [
     {
       "code": "00936",
@@ -17084,13 +17084,31 @@
       "status": "actual"
     },
     {
+      "code": "00734B",
+      "name": "台新JPM新興債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-16",
+      "amount": 0.16,
+      "status": "actual"
+    },
+    {
+      "code": "00842B",
+      "name": "台新美元銀行債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-16",
+      "amount": 0.55,
+      "status": "actual"
+    },
+    {
       "code": "00851",
       "name": "台新全球AI",
       "market": "TWSE",
       "category": "一般股票型",
       "ex_date": "2026-10-16",
       "amount": 2.5,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00904",
@@ -17099,7 +17117,7 @@
       "category": "一般股票型",
       "ex_date": "2026-10-16",
       "amount": 2.2,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00936",
@@ -17108,7 +17126,16 @@
       "category": "高股息",
       "ex_date": "2026-10-16",
       "amount": 0.16,
-      "status": "announced"
+      "status": "actual"
+    },
+    {
+      "code": "00942B",
+      "name": "台新美A公司債20+",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-16",
+      "amount": 0.062,
+      "status": "actual"
     },
     {
       "code": "00947",
@@ -17117,7 +17144,7 @@
       "category": "一般股票型",
       "ex_date": "2026-10-16",
       "amount": 2.0,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00962",
@@ -17126,7 +17153,43 @@
       "category": "高股息",
       "ex_date": "2026-10-16",
       "amount": 0.25,
-      "status": "announced"
+      "status": "actual"
+    },
+    {
+      "code": "00970B",
+      "name": "台新BBB投等債20+",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-16",
+      "amount": 0.05,
+      "status": "actual"
+    },
+    {
+      "code": "00980B",
+      "name": "台新特選IG債10+",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-16",
+      "amount": 0.047,
+      "status": "actual"
+    },
+    {
+      "code": "00988B",
+      "name": "玉山嚴選非投債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-16",
+      "amount": 0.146,
+      "status": "actual"
+    },
+    {
+      "code": "00989B",
+      "name": "台新美國非投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-16",
+      "amount": 0.088,
+      "status": "actual"
     },
     {
       "code": "00714",
@@ -17432,6 +17495,33 @@
       "category": "一般股票型",
       "ex_date": "2026-11-03",
       "amount": 0.138,
+      "status": "announced"
+    },
+    {
+      "code": "00939",
+      "name": "統一台灣高息動能",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-03",
+      "amount": 0.15,
+      "status": "announced"
+    },
+    {
+      "code": "00984D",
+      "name": "主動聯博全球非投",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-03",
+      "amount": 0.085,
+      "status": "announced"
+    },
+    {
+      "code": "00946",
+      "name": "群益科技高息成長",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-04",
+      "amount": 0.058,
       "status": "announced"
     }
   ]
