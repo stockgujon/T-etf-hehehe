@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T04:07:30.807528+08:00",
+  "updated_at": "2026-10-20T06:07:12.463756+08:00",
   "etfs": {
     "00400A": {
       "code": "00400A",
@@ -1467,7 +1467,7 @@
       "name": "國泰台灣領袖50",
       "market": "TWSE",
       "category": "一般股票型",
-      "frequency": "季配",
+      "frequency": "雙月配",
       "freq_months": [
         3,
         10
@@ -2020,7 +2020,8 @@
         6,
         7,
         8,
-        9
+        9,
+        10
       ]
     },
     "00982A": {
@@ -2051,7 +2052,8 @@
         6,
         7,
         8,
-        9
+        9,
+        10
       ]
     },
     "00982T": {
@@ -2087,7 +2089,8 @@
         6,
         7,
         8,
-        9
+        9,
+        10
       ]
     },
     "00984A": {
@@ -2095,7 +2098,7 @@
       "name": "主動安聯台灣高息",
       "market": "TWSE",
       "category": "高股息",
-      "frequency": "雙月配",
+      "frequency": "月配",
       "freq_months": [
         1,
         4,
@@ -2122,8 +2125,10 @@
       "name": "主動野村台灣50",
       "market": "TWSE",
       "category": "一般股票型",
-      "frequency": "未知",
-      "freq_months": []
+      "frequency": "半年配",
+      "freq_months": [
+        10
+      ]
     },
     "00985B": {
       "code": "00985B",
@@ -2209,9 +2214,10 @@
       "name": "主動群益科技創新",
       "market": "TWSE",
       "category": "一般股票型",
-      "frequency": "半年配",
+      "frequency": "季配",
       "freq_months": [
-        7
+        7,
+        10
       ]
     },
     "00993A": {
@@ -2238,16 +2244,20 @@
       "name": "主動中信台灣卓越",
       "market": "TWSE",
       "category": "一般股票型",
-      "frequency": "未知",
-      "freq_months": []
+      "frequency": "半年配",
+      "freq_months": [
+        10
+      ]
     },
     "00996A": {
       "code": "00996A",
       "name": "主動兆豐台灣豐收",
       "market": "TWSE",
       "category": "一般股票型",
-      "frequency": "未知",
-      "freq_months": []
+      "frequency": "半年配",
+      "freq_months": [
+        10
+      ]
     },
     "00997A": {
       "code": "00997A",
@@ -3676,6 +3686,7 @@
         7,
         8,
         9,
+        10,
         12
       ]
     },
