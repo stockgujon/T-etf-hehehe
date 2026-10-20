@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T06:07:12.463756+08:00",
+  "updated_at": "2026-10-21T05:15:30.005970+08:00",
   "etfs": {
     "00400A": {
       "code": "00400A",
@@ -2206,8 +2206,10 @@
       "name": "貝萊德A級公司債",
       "market": "TWSE",
       "category": "債券型",
-      "frequency": "未知",
-      "freq_months": []
+      "frequency": "半年配",
+      "freq_months": [
+        10
+      ]
     },
     "00992A": {
       "code": "00992A",
@@ -3752,12 +3754,13 @@
       "name": "主動貝萊德優投等",
       "market": "TPEx",
       "category": "一般股票型",
-      "frequency": "雙月配",
+      "frequency": "月配",
       "freq_months": [
         6,
         7,
         8,
-        9
+        9,
+        10
       ]
     },
     "00986B": {

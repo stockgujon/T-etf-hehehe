@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T06:07:12.463756+08:00",
+  "updated_at": "2026-10-21T05:15:30.005970+08:00",
   "events": [
     {
       "code": "00734B",
@@ -17408,13 +17408,31 @@
       "status": "actual"
     },
     {
+      "code": "00931B",
+      "name": "統一美債20年",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-20",
+      "amount": 0.141,
+      "status": "actual"
+    },
+    {
+      "code": "00985D",
+      "name": "主動貝萊德優投等",
+      "market": "TPEx",
+      "category": "一般股票型",
+      "ex_date": "2026-10-20",
+      "amount": 0.061,
+      "status": "actual"
+    },
+    {
       "code": "00991B",
       "name": "貝萊德A級公司債",
       "market": "TWSE",
       "category": "債券型",
       "ex_date": "2026-10-20",
       "amount": 0.067,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00408A",
@@ -17504,6 +17522,15 @@
       "category": "債券型",
       "ex_date": "2026-11-04",
       "amount": 0.053,
+      "status": "announced"
+    },
+    {
+      "code": "00400A",
+      "name": "主動國泰動能高息",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-06",
+      "amount": 0.12,
       "status": "announced"
     }
   ]
