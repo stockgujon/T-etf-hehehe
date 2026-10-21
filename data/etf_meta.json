@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T05:15:30.005970+08:00",
+  "updated_at": "2026-10-22T05:16:34.445369+08:00",
   "etfs": {
     "00400A": {
       "code": "00400A",
@@ -85,8 +85,10 @@
       "name": "主動第一金優股息",
       "market": "TWSE",
       "category": "一般股票型",
-      "frequency": "未知",
-      "freq_months": []
+      "frequency": "半年配",
+      "freq_months": [
+        10
+      ]
     },
     "00409A": {
       "code": "00409A",
@@ -3784,12 +3786,13 @@
       "name": "主動復華金融債息",
       "market": "TPEx",
       "category": "債券型",
-      "frequency": "雙月配",
+      "frequency": "月配",
       "freq_months": [
         6,
         7,
         8,
-        9
+        9,
+        10
       ]
     },
     "00987B": {

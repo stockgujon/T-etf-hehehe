@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T05:15:30.005970+08:00",
+  "updated_at": "2026-10-22T05:16:34.445369+08:00",
   "events": [
     {
       "code": "00734B",
@@ -17441,7 +17441,25 @@
       "category": "一般股票型",
       "ex_date": "2026-10-21",
       "amount": 0.21,
-      "status": "announced"
+      "status": "actual"
+    },
+    {
+      "code": "00789B",
+      "name": "復華公司債A3",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-21",
+      "amount": 0.67,
+      "status": "actual"
+    },
+    {
+      "code": "00791B",
+      "name": "復華信用債1-5",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-21",
+      "amount": 0.65,
+      "status": "actual"
     },
     {
       "code": "00929",
@@ -17450,7 +17468,16 @@
       "category": "高股息",
       "ex_date": "2026-10-21",
       "amount": 0.38,
-      "status": "announced"
+      "status": "actual"
+    },
+    {
+      "code": "00986D",
+      "name": "主動復華金融債息",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-21",
+      "amount": 0.09,
+      "status": "actual"
     },
     {
       "code": "0056",
