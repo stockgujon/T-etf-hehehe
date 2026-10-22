@@ -1,69 +1,6 @@
 {
-  "updated_at": "2026-10-22T05:16:34.445369+08:00",
+  "updated_at": "2026-10-23T05:23:41.054706+08:00",
   "events": [
-    {
-      "code": "00734B",
-      "name": "台新JPM新興債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-10-21",
-      "amount": 0.16,
-      "status": "actual"
-    },
-    {
-      "code": "00749B",
-      "name": "凱基新興債10+",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-10-21",
-      "amount": 0.435,
-      "status": "actual"
-    },
-    {
-      "code": "00750B",
-      "name": "凱基科技債10+",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-10-21",
-      "amount": 0.37,
-      "status": "actual"
-    },
-    {
-      "code": "00842B",
-      "name": "台新美元銀行債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-10-21",
-      "amount": 0.44,
-      "status": "actual"
-    },
-    {
-      "code": "00904",
-      "name": "台新臺灣半導體30",
-      "market": "TWSE",
-      "category": "一般股票型",
-      "ex_date": "2024-10-21",
-      "amount": 0.15,
-      "status": "actual"
-    },
-    {
-      "code": "00942B",
-      "name": "台新美A公司債20+",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-10-21",
-      "amount": 0.068,
-      "status": "actual"
-    },
-    {
-      "code": "00945B",
-      "name": "凱基美國非投等債",
-      "market": "TWSE",
-      "category": "債券型",
-      "ex_date": "2024-10-21",
-      "amount": 0.102,
-      "status": "actual"
-    },
     {
       "code": "00714",
       "name": "群益道瓊美國地產",
@@ -17486,7 +17423,79 @@
       "category": "高股息",
       "ex_date": "2026-10-22",
       "amount": 1.72,
-      "status": "announced"
+      "status": "actual"
+    },
+    {
+      "code": "00719B",
+      "name": "元大美債1-3",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-22",
+      "amount": 0.27,
+      "status": "actual"
+    },
+    {
+      "code": "00720B",
+      "name": "元大投資級公司債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-22",
+      "amount": 0.46,
+      "status": "actual"
+    },
+    {
+      "code": "00788B",
+      "name": "元大10年IG電能債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-22",
+      "amount": 0.37,
+      "status": "actual"
+    },
+    {
+      "code": "00834B",
+      "name": "第一金金融債10+",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-22",
+      "amount": 0.415,
+      "status": "actual"
+    },
+    {
+      "code": "00870B",
+      "name": "元大15年EM主權債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-22",
+      "amount": 0.38,
+      "status": "actual"
+    },
+    {
+      "code": "00967B",
+      "name": "元大優息美債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-22",
+      "amount": 0.033,
+      "status": "actual"
+    },
+    {
+      "code": "00968B",
+      "name": "元大優息投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-22",
+      "amount": 0.043,
+      "status": "actual"
+    },
+    {
+      "code": "00981B",
+      "name": "第一金優選非投債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-22",
+      "amount": 0.063,
+      "status": "actual"
     },
     {
       "code": "00907",
@@ -17558,6 +17567,15 @@
       "category": "高股息",
       "ex_date": "2026-11-06",
       "amount": 0.12,
+      "status": "announced"
+    },
+    {
+      "code": "00940",
+      "name": "元大台灣價值高息",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-10",
+      "amount": 0.06,
       "status": "announced"
     }
   ]
