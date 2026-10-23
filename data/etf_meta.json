@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T05:23:41.054706+08:00",
+  "updated_at": "2026-10-24T05:04:59.720672+08:00",
   "etfs": {
     "00400A": {
       "code": "00400A",
@@ -148,7 +148,7 @@
       "name": "富邦科技",
       "market": "TWSE",
       "category": "一般股票型",
-      "frequency": "季配",
+      "frequency": "半年配",
       "freq_months": [
         4
       ]

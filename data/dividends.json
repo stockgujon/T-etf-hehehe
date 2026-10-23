@@ -1,105 +1,6 @@
 {
-  "updated_at": "2026-10-23T05:23:41.054706+08:00",
+  "updated_at": "2026-10-24T05:04:59.720672+08:00",
   "events": [
-    {
-      "code": "00714",
-      "name": "群益道瓊美國地產",
-      "market": "TWSE",
-      "category": "一般股票型",
-      "ex_date": "2024-10-22",
-      "amount": 0.123,
-      "status": "actual"
-    },
-    {
-      "code": "00722B",
-      "name": "群益投資級電信債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-10-22",
-      "amount": 0.53,
-      "status": "actual"
-    },
-    {
-      "code": "00723B",
-      "name": "群益投資級科技債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-10-22",
-      "amount": 0.442,
-      "status": "actual"
-    },
-    {
-      "code": "00724B",
-      "name": "群益投資級金融債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-10-22",
-      "amount": 0.473,
-      "status": "actual"
-    },
-    {
-      "code": "00789B",
-      "name": "復華公司債A3",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-10-22",
-      "amount": 0.6,
-      "status": "actual"
-    },
-    {
-      "code": "00791B",
-      "name": "復華信用債1-5",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-10-22",
-      "amount": 0.562,
-      "status": "actual"
-    },
-    {
-      "code": "00834B",
-      "name": "第一金金融債10+",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-10-22",
-      "amount": 0.407,
-      "status": "actual"
-    },
-    {
-      "code": "00905",
-      "name": "FT臺灣SMART",
-      "market": "TWSE",
-      "category": "一般股票型",
-      "ex_date": "2024-10-22",
-      "amount": 0.32,
-      "status": "actual"
-    },
-    {
-      "code": "00927",
-      "name": "群益半導體收益",
-      "market": "TWSE",
-      "category": "一般股票型",
-      "ex_date": "2024-10-22",
-      "amount": 0.48,
-      "status": "actual"
-    },
-    {
-      "code": "00929",
-      "name": "復華台灣科技優息",
-      "market": "TWSE",
-      "category": "高股息",
-      "ex_date": "2024-10-22",
-      "amount": 0.14,
-      "status": "actual"
-    },
-    {
-      "code": "00937B",
-      "name": "群益ESG投等債20+",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-10-22",
-      "amount": 0.082,
-      "status": "actual"
-    },
     {
       "code": "00888",
       "name": "永豐台灣ESG",
@@ -17351,6 +17252,15 @@
       "category": "債券型",
       "ex_date": "2026-10-20",
       "amount": 0.141,
+      "status": "actual"
+    },
+    {
+      "code": "00964",
+      "name": "中信亞太高股息",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-10-20",
+      "amount": 0.2,
       "status": "actual"
     },
     {
