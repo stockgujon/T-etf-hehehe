@@ -1,24 +1,6 @@
 {
-  "updated_at": "2026-10-27T06:22:46.464406+08:00",
+  "updated_at": "2026-10-28T05:52:33.034995+08:00",
   "events": [
-    {
-      "code": "00888",
-      "name": "永豐台灣ESG",
-      "market": "TPEx",
-      "category": "一般股票型",
-      "ex_date": "2024-10-24",
-      "amount": 0.188,
-      "status": "actual"
-    },
-    {
-      "code": "00907",
-      "name": "永豐優息存股",
-      "market": "TWSE",
-      "category": "高股息",
-      "ex_date": "2024-10-24",
-      "amount": 0.28,
-      "status": "actual"
-    },
     {
       "code": "00939",
       "name": "統一台灣高息動能",
@@ -17408,13 +17390,31 @@
       "status": "actual"
     },
     {
+      "code": "00888",
+      "name": "永豐台灣ESG",
+      "market": "TPEx",
+      "category": "一般股票型",
+      "ex_date": "2026-10-27",
+      "amount": 1.5,
+      "status": "actual"
+    },
+    {
       "code": "00907",
       "name": "永豐優息存股",
       "market": "TWSE",
       "category": "高股息",
       "ex_date": "2026-10-27",
       "amount": 0.268,
-      "status": "announced"
+      "status": "actual"
+    },
+    {
+      "code": "00958B",
+      "name": "永豐ESG銀行債15+",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-27",
+      "amount": 0.041,
+      "status": "actual"
     },
     {
       "code": "00406A",
