@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T05:52:33.034995+08:00",
+  "updated_at": "2026-10-29T06:18:33.566753+08:00",
   "events": [
     {
       "code": "00939",
@@ -17414,6 +17414,24 @@
       "category": "債券型",
       "ex_date": "2026-10-27",
       "amount": 0.041,
+      "status": "actual"
+    },
+    {
+      "code": "00726B",
+      "name": "國泰新興投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-28",
+      "amount": 0.46,
+      "status": "actual"
+    },
+    {
+      "code": "00990B",
+      "name": "國泰收益非投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-10-28",
+      "amount": 0.08,
       "status": "actual"
     },
     {
