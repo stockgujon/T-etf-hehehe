@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T08:29:49.329812+08:00",
+  "updated_at": "2026-11-04T07:02:07.854586+08:00",
   "events": [
     {
       "code": "00940",
@@ -17396,7 +17396,52 @@
       "category": "高股息",
       "ex_date": "2026-11-03",
       "amount": 0.15,
-      "status": "announced"
+      "status": "actual"
+    },
+    {
+      "code": "00950B",
+      "name": "凱基A級公司債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-11-03",
+      "amount": 0.063,
+      "status": "actual"
+    },
+    {
+      "code": "00959B",
+      "name": "大華投等美債15Y+",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-11-03",
+      "amount": 0.048,
+      "status": "actual"
+    },
+    {
+      "code": "00966B",
+      "name": "統一ESG投等債15+",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-11-03",
+      "amount": 0.068,
+      "status": "actual"
+    },
+    {
+      "code": "00983B",
+      "name": "大華優利美公債20",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-11-03",
+      "amount": 0.062,
+      "status": "actual"
+    },
+    {
+      "code": "00984B",
+      "name": "大華優利美A債15",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-11-03",
+      "amount": 0.08,
+      "status": "actual"
     },
     {
       "code": "00984D",
@@ -17405,7 +17450,16 @@
       "category": "一般股票型",
       "ex_date": "2026-11-03",
       "amount": 0.085,
-      "status": "announced"
+      "status": "actual"
+    },
+    {
+      "code": "00986B",
+      "name": "FT金融債10+",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-11-03",
+      "amount": 0.022,
+      "status": "actual"
     },
     {
       "code": "00946",
