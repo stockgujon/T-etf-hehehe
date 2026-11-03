@@ -1,60 +1,6 @@
 {
-  "updated_at": "2026-11-02T05:46:12.502636+08:00",
+  "updated_at": "2026-11-03T08:29:49.329812+08:00",
   "events": [
-    {
-      "code": "00939",
-      "name": "統一台灣高息動能",
-      "market": "TWSE",
-      "category": "高股息",
-      "ex_date": "2024-10-31",
-      "amount": 0.063,
-      "status": "actual"
-    },
-    {
-      "code": "00950B",
-      "name": "凱基A級公司債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-10-31",
-      "amount": 0.082,
-      "status": "actual"
-    },
-    {
-      "code": "00959B",
-      "name": "大華投等美債15Y+",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-10-31",
-      "amount": 0.055,
-      "status": "actual"
-    },
-    {
-      "code": "00939",
-      "name": "統一台灣高息動能",
-      "market": "TWSE",
-      "category": "高股息",
-      "ex_date": "2024-11-01",
-      "amount": 0.063,
-      "status": "actual"
-    },
-    {
-      "code": "00950B",
-      "name": "凱基A級公司債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-11-01",
-      "amount": 0.082,
-      "status": "actual"
-    },
-    {
-      "code": "00959B",
-      "name": "大華投等美債15Y+",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-11-01",
-      "amount": 0.055,
-      "status": "actual"
-    },
     {
       "code": "00940",
       "name": "元大台灣價值高息",
@@ -17513,6 +17459,339 @@
       "category": "一般股票型",
       "ex_date": "2026-11-13",
       "amount": 0.138,
+      "status": "announced"
+    },
+    {
+      "code": "00775B",
+      "name": "台新投等債15+",
+      "market": "TWSE",
+      "category": "債券型",
+      "ex_date": "2026-11-16",
+      "amount": 0.35,
+      "status": "announced"
+    },
+    {
+      "code": "00936",
+      "name": "台新永續高息中小",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-16",
+      "amount": 0.16,
+      "status": "announced"
+    },
+    {
+      "code": "00951",
+      "name": "台新日本半導體",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-16",
+      "amount": 2.0,
+      "status": "announced"
+    },
+    {
+      "code": "00962",
+      "name": "台新AI優息動能",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-16",
+      "amount": 0.1,
+      "status": "announced"
+    },
+    {
+      "code": "00690",
+      "name": "兆豐藍籌30",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-17",
+      "amount": 2.0,
+      "status": "announced"
+    },
+    {
+      "code": "00692",
+      "name": "富邦公司治理",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-17",
+      "amount": 1.721,
+      "status": "announced"
+    },
+    {
+      "code": "00730",
+      "name": "富邦臺灣優質高息",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-17",
+      "amount": 0.11,
+      "status": "announced"
+    },
+    {
+      "code": "00878",
+      "name": "國泰永續高股息",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-17",
+      "amount": 1.25,
+      "status": "announced"
+    },
+    {
+      "code": "00891",
+      "name": "中信關鍵半導體",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-17",
+      "amount": 1.55,
+      "status": "announced"
+    },
+    {
+      "code": "00892",
+      "name": "富邦台灣半導體",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-17",
+      "amount": 4.0,
+      "status": "announced"
+    },
+    {
+      "code": "00894",
+      "name": "中信小資高價30",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-17",
+      "amount": 1.0,
+      "status": "announced"
+    },
+    {
+      "code": "00900",
+      "name": "富邦特選高股息30",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-17",
+      "amount": 0.075,
+      "status": "announced"
+    },
+    {
+      "code": "00932",
+      "name": "兆豐永續高息等權",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-17",
+      "amount": 0.23,
+      "status": "announced"
+    },
+    {
+      "code": "00934",
+      "name": "中信成長高股息",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-17",
+      "amount": 0.5,
+      "status": "announced"
+    },
+    {
+      "code": "00938",
+      "name": "凱基優選30",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-17",
+      "amount": 0.35,
+      "status": "announced"
+    },
+    {
+      "code": "00943",
+      "name": "兆豐電子高息等權",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-17",
+      "amount": 0.35,
+      "status": "announced"
+    },
+    {
+      "code": "00944",
+      "name": "野村趨勢動能高息",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-17",
+      "amount": 0.109,
+      "status": "announced"
+    },
+    {
+      "code": "00945B",
+      "name": "凱基美國非投等債",
+      "market": "TWSE",
+      "category": "債券型",
+      "ex_date": "2026-11-17",
+      "amount": 0.097,
+      "status": "announced"
+    },
+    {
+      "code": "00952",
+      "name": "凱基台灣AI50",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-17",
+      "amount": 0.12,
+      "status": "announced"
+    },
+    {
+      "code": "00961",
+      "name": "FT臺灣永續高息",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-17",
+      "amount": 0.09,
+      "status": "announced"
+    },
+    {
+      "code": "00963",
+      "name": "中信全球高股息",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-17",
+      "amount": 0.1,
+      "status": "announced"
+    },
+    {
+      "code": "00964",
+      "name": "中信亞太高股息",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-17",
+      "amount": 0.2,
+      "status": "announced"
+    },
+    {
+      "code": "00980A",
+      "name": "主動野村臺灣優選",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-17",
+      "amount": 0.688,
+      "status": "announced"
+    },
+    {
+      "code": "00981T",
+      "name": "平衡凱基雙核收息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-17",
+      "amount": 0.082,
+      "status": "announced"
+    },
+    {
+      "code": "00982A",
+      "name": "主動群益台灣強棒",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-17",
+      "amount": 0.78,
+      "status": "announced"
+    },
+    {
+      "code": "00982D",
+      "name": "主動富邦動態入息",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-17",
+      "amount": 0.052,
+      "status": "announced"
+    },
+    {
+      "code": "00983D",
+      "name": "主動富邦複合收益",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-17",
+      "amount": 0.061,
+      "status": "announced"
+    },
+    {
+      "code": "00731",
+      "name": "復華富時高息低波",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-18",
+      "amount": 1.828,
+      "status": "announced"
+    },
+    {
+      "code": "00929",
+      "name": "復華台灣科技優息",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-18",
+      "amount": 0.38,
+      "status": "announced"
+    },
+    {
+      "code": "00949",
+      "name": "復華日本龍頭",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-18",
+      "amount": 3.02,
+      "status": "announced"
+    },
+    {
+      "code": "00991B",
+      "name": "貝萊德A級公司債",
+      "market": "TWSE",
+      "category": "債券型",
+      "ex_date": "2026-11-18",
+      "amount": 0.073,
+      "status": "announced"
+    },
+    {
+      "code": "0051",
+      "name": "元大中型100",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-20",
+      "amount": 4.5,
+      "status": "announced"
+    },
+    {
+      "code": "0055",
+      "name": "元大MSCI金融",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-20",
+      "amount": 2.7,
+      "status": "announced"
+    },
+    {
+      "code": "00771",
+      "name": "元大US高息特別股",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-20",
+      "amount": 0.21,
+      "status": "announced"
+    },
+    {
+      "code": "00850",
+      "name": "元大臺灣ESG永續",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-20",
+      "amount": 1.0,
+      "status": "announced"
+    },
+    {
+      "code": "00901",
+      "name": "永豐智能車供應鏈",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-24",
+      "amount": 7.0,
+      "status": "announced"
+    },
+    {
+      "code": "00930",
+      "name": "永豐ESG低碳高息",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-11-24",
+      "amount": 0.75,
       "status": "announced"
     }
   ]
