@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T07:02:07.854586+08:00",
+  "updated_at": "2026-11-05T07:21:00.176824+08:00",
   "events": [
     {
       "code": "00940",
@@ -17387,7 +17387,7 @@
       "category": "一般股票型",
       "ex_date": "2026-11-03",
       "amount": 0.138,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00939",
@@ -17468,7 +17468,7 @@
       "category": "高股息",
       "ex_date": "2026-11-04",
       "amount": 0.058,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00953B",
@@ -17477,7 +17477,7 @@
       "category": "債券型",
       "ex_date": "2026-11-04",
       "amount": 0.067,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00985B",
@@ -17486,7 +17486,7 @@
       "category": "債券型",
       "ex_date": "2026-11-04",
       "amount": 0.053,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00400A",
