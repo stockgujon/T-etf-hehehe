@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T07:20:43.340279+08:00",
+  "updated_at": "2026-11-07T06:51:19.115331+08:00",
   "events": [
     {
       "code": "00940",
@@ -17495,7 +17495,7 @@
       "category": "高股息",
       "ex_date": "2026-11-06",
       "amount": 0.12,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00940",
