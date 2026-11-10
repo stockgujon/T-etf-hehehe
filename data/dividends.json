@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-11-09T05:47:39.809948+08:00",
+  "updated_at": "2026-11-10T09:32:04.733263+08:00",
   "events": [
-    {
-      "code": "00940",
-      "name": "元大台灣價值高息",
-      "market": "TWSE",
-      "category": "高股息",
-      "ex_date": "2024-11-07",
-      "amount": 0.04,
-      "status": "actual"
-    },
-    {
-      "code": "00946",
-      "name": "群益科技高息成長",
-      "market": "TWSE",
-      "category": "高股息",
-      "ex_date": "2024-11-07",
-      "amount": 0.054,
-      "status": "actual"
-    },
-    {
-      "code": "00953B",
-      "name": "群益優選非投等債",
-      "market": "TWSE",
-      "category": "債券型",
-      "ex_date": "2024-11-07",
-      "amount": 0.07,
-      "status": "actual"
-    },
     {
       "code": "00936",
       "name": "台新永續高息中小",
