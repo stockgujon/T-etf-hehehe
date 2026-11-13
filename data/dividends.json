@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T07:17:10.289992+08:00",
+  "updated_at": "2026-11-14T07:20:10.412536+08:00",
   "events": [
     {
       "code": "00936",
@@ -17486,7 +17486,7 @@
       "category": "一般股票型",
       "ex_date": "2026-11-13",
       "amount": 0.138,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00775B",
