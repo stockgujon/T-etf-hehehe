@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T06:05:00.496385+08:00",
+  "updated_at": "2026-11-16T06:34:46.444097+08:00",
   "events": [
     {
       "code": "00936",
@@ -17774,6 +17774,15 @@
       "category": "一般股票型",
       "ex_date": "2026-11-20",
       "amount": 4.5,
+      "status": "announced"
+    },
+    {
+      "code": "0055",
+      "name": "元大MSCI金融",
+      "market": "TWSE",
+      "category": "一般股票型",
+      "ex_date": "2026-11-20",
+      "amount": 2.7,
       "status": "announced"
     },
     {
