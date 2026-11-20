@@ -1,78 +1,6 @@
 {
-  "updated_at": "2026-11-20T08:28:17.278173+08:00",
+  "updated_at": "2026-11-21T07:48:35.880008+08:00",
   "events": [
-    {
-      "code": "00690",
-      "name": "兆豐藍籌30",
-      "market": "TWSE",
-      "category": "一般股票型",
-      "ex_date": "2024-11-19",
-      "amount": 0.8,
-      "status": "actual"
-    },
-    {
-      "code": "00731",
-      "name": "復華富時高息低波",
-      "market": "TWSE",
-      "category": "高股息",
-      "ex_date": "2024-11-19",
-      "amount": 2.38,
-      "status": "actual"
-    },
-    {
-      "code": "00758B",
-      "name": "復華能源債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-11-19",
-      "amount": 0.6,
-      "status": "actual"
-    },
-    {
-      "code": "00759B",
-      "name": "復華製藥債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-11-19",
-      "amount": 0.62,
-      "status": "actual"
-    },
-    {
-      "code": "00760B",
-      "name": "復華新興企業債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-11-19",
-      "amount": 0.71,
-      "status": "actual"
-    },
-    {
-      "code": "00929",
-      "name": "復華台灣科技優息",
-      "market": "TWSE",
-      "category": "高股息",
-      "ex_date": "2024-11-19",
-      "amount": 0.11,
-      "status": "actual"
-    },
-    {
-      "code": "00932",
-      "name": "兆豐永續高息等權",
-      "market": "TWSE",
-      "category": "高股息",
-      "ex_date": "2024-11-19",
-      "amount": 0.52,
-      "status": "actual"
-    },
-    {
-      "code": "00943",
-      "name": "兆豐電子高息等權",
-      "market": "TWSE",
-      "category": "高股息",
-      "ex_date": "2024-11-19",
-      "amount": 0.15,
-      "status": "actual"
-    },
     {
       "code": "00775B",
       "name": "台新投等債15+",
@@ -17858,13 +17786,31 @@
       "status": "announced"
     },
     {
+      "code": "00679B",
+      "name": "元大美債20年",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-11-20",
+      "amount": 0.28,
+      "status": "actual"
+    },
+    {
       "code": "00771",
       "name": "元大US高息特別股",
       "market": "TWSE",
       "category": "高股息",
       "ex_date": "2026-11-20",
       "amount": 0.21,
-      "status": "announced"
+      "status": "actual"
+    },
+    {
+      "code": "00786B",
+      "name": "元大10年IG銀行債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-11-20",
+      "amount": 0.38,
+      "status": "actual"
     },
     {
       "code": "00850",
@@ -17873,7 +17819,34 @@
       "category": "一般股票型",
       "ex_date": "2026-11-20",
       "amount": 1.0,
-      "status": "announced"
+      "status": "actual"
+    },
+    {
+      "code": "00967B",
+      "name": "元大優息美債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-11-20",
+      "amount": 0.033,
+      "status": "actual"
+    },
+    {
+      "code": "00968B",
+      "name": "元大優息投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-11-20",
+      "amount": 0.043,
+      "status": "actual"
+    },
+    {
+      "code": "00981B",
+      "name": "第一金優選非投債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-11-20",
+      "amount": 0.064,
+      "status": "actual"
     },
     {
       "code": "00901",
@@ -17945,6 +17918,15 @@
       "category": "債券型",
       "ex_date": "2026-12-03",
       "amount": 0.053,
+      "status": "announced"
+    },
+    {
+      "code": "00400A",
+      "name": "主動國泰動能高息",
+      "market": "TWSE",
+      "category": "高股息",
+      "ex_date": "2026-12-08",
+      "amount": 0.06,
       "status": "announced"
     }
   ]
