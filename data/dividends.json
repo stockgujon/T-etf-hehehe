@@ -1,78 +1,6 @@
 {
-  "updated_at": "2026-11-23T07:15:55.008547+08:00",
+  "updated_at": "2026-11-24T12:16:55.115286+08:00",
   "events": [
-    {
-      "code": "00775B",
-      "name": "台新投等債15+",
-      "market": "TWSE",
-      "category": "債券型",
-      "ex_date": "2024-11-20",
-      "amount": 0.57,
-      "status": "actual"
-    },
-    {
-      "code": "00844B",
-      "name": "台新15年IG金融債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-11-20",
-      "amount": 0.57,
-      "status": "actual"
-    },
-    {
-      "code": "00867B",
-      "name": "台新A-BBB電信債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-11-20",
-      "amount": 0.43,
-      "status": "actual"
-    },
-    {
-      "code": "00754B",
-      "name": "群益AAA-AA公司債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-11-21",
-      "amount": 0.45,
-      "status": "actual"
-    },
-    {
-      "code": "00755B",
-      "name": "群益投資級公用債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-11-21",
-      "amount": 0.46,
-      "status": "actual"
-    },
-    {
-      "code": "00756B",
-      "name": "群益投等新興公債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-11-21",
-      "amount": 0.498,
-      "status": "actual"
-    },
-    {
-      "code": "00860B",
-      "name": "群益1-5Y投資級債",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-11-21",
-      "amount": 0.479,
-      "status": "actual"
-    },
-    {
-      "code": "00937B",
-      "name": "群益ESG投等債20+",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-11-21",
-      "amount": 0.082,
-      "status": "actual"
-    },
     {
       "code": "00901",
       "name": "永豐智能車供應鏈",
@@ -17774,7 +17702,7 @@
       "category": "一般股票型",
       "ex_date": "2026-11-20",
       "amount": 4.5,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "0055",
@@ -17783,7 +17711,7 @@
       "category": "一般股票型",
       "ex_date": "2026-11-20",
       "amount": 2.7,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00679B",
