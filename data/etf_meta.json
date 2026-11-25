@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T12:16:55.115286+08:00",
+  "updated_at": "2026-11-25T10:24:03.605306+08:00",
   "etfs": {
     "00400A": {
       "code": "00400A",
@@ -1296,7 +1296,7 @@
       "name": "永豐智能車供應鏈",
       "market": "TWSE",
       "category": "一般股票型",
-      "frequency": "半年配",
+      "frequency": "季配",
       "freq_months": [
         11
       ]
@@ -3905,10 +3905,11 @@
       "name": "國泰收益非投等債",
       "market": "TPEx",
       "category": "債券型",
-      "frequency": "季配",
+      "frequency": "雙月配",
       "freq_months": [
         9,
-        10
+        10,
+        11
       ]
     },
     "00992B": {

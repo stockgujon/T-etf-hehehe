@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T12:16:55.115286+08:00",
+  "updated_at": "2026-11-25T10:24:03.605306+08:00",
   "events": [
     {
       "code": "00901",
@@ -17783,7 +17783,7 @@
       "category": "一般股票型",
       "ex_date": "2026-11-24",
       "amount": 7.0,
-      "status": "announced"
+      "status": "actual"
     },
     {
       "code": "00930",
@@ -17793,6 +17793,24 @@
       "ex_date": "2026-11-24",
       "amount": 0.75,
       "status": "announced"
+    },
+    {
+      "code": "00958B",
+      "name": "永豐ESG銀行債15+",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-11-24",
+      "amount": 0.042,
+      "status": "actual"
+    },
+    {
+      "code": "00990B",
+      "name": "國泰收益非投等債",
+      "market": "TPEx",
+      "category": "債券型",
+      "ex_date": "2026-11-24",
+      "amount": 0.077,
+      "status": "actual"
     },
     {
       "code": "00939",
