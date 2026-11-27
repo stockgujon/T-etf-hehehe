@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-11-26T09:55:26.587855+08:00",
+  "updated_at": "2026-11-27T09:58:04.391458+08:00",
   "events": [
-    {
-      "code": "00901",
-      "name": "永豐智能車供應鏈",
-      "market": "TWSE",
-      "category": "一般股票型",
-      "ex_date": "2024-11-26",
-      "amount": 0.9,
-      "status": "actual"
-    },
-    {
-      "code": "00930",
-      "name": "永豐ESG低碳高息",
-      "market": "TWSE",
-      "category": "高股息",
-      "ex_date": "2024-11-26",
-      "amount": 0.43,
-      "status": "actual"
-    },
-    {
-      "code": "00958B",
-      "name": "永豐ESG銀行債15+",
-      "market": "TPEx",
-      "category": "債券型",
-      "ex_date": "2024-11-26",
-      "amount": 0.042,
-      "status": "actual"
-    },
     {
       "code": "00939",
       "name": "統一台灣高息動能",
